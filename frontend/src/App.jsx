@@ -7,17 +7,24 @@ const API_URL = "https://blue-wave-plumbing.onrender.com/api/items"; // backend 
 // ------------------ Item List ------------------
 function ItemList() {
   const [items, setItems] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get(API_URL).then((res) => setItems(res.data));
+    axios.get(API_URL)
+      .then((res) => setItems(res.data))
+      .catch((err) => setError("Failed to load items."));
   }, []);
+
+  if (error) return <p className="p-6 text-red-600">{error}</p>;
 
   return (
     <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {items.map((item) => (
         <Link key={item._id} to={`/items/${item._id}`} className="border rounded-xl shadow-md p-4 bg-white hover:shadow-lg">
           <h2 className="text-xl font-bold mb-2">{item.name}</h2>
-          {item.images.length > 0 && <img src={item.images[0]} alt={item.name} className="w-full h-48 object-cover rounded-lg" />}
+          {item.images.length > 0 && (
+            <img src={item.images[0]} alt={item.name} className="w-full h-48 object-cover rounded-lg" />
+          )}
         </Link>
       ))}
       <Link to="/create" className="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg">+ Add Item</Link>
@@ -29,17 +36,25 @@ function ItemList() {
 function ItemDetail() {
   const { id } = useParams();
   const [item, setItem] = useState(null);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${API_URL}/${id}`).then((res) => setItem(res.data));
+    axios.get(`${API_URL}/${id}`)
+      .then((res) => setItem(res.data))
+      .catch(() => setError("Failed to load item."));
   }, [id]);
 
   const handleDelete = async () => {
-    await axios.delete(`${API_URL}/${id}`);
-    navigate("/");
+    try {
+      await axios.delete(`${API_URL}/${id}`);
+      navigate("/");
+    } catch (err) {
+      setError("Failed to delete item.");
+    }
   };
 
+  if (error) return <p className="p-6 text-red-600">{error}</p>;
   if (!item) return <p className="p-6">Loading...</p>;
 
   return (
@@ -61,6 +76,7 @@ function ItemDetail() {
 function ItemCreate() {
   const [form, setForm] = useState({ name: "", description: "" });
   const [images, setImages] = useState([]);
+  const [message, setMessage] = useState(null);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -71,19 +87,31 @@ function ItemCreate() {
     for (let i = 0; i < images.length; i++) {
       formData.append("images", images[i]);
     }
-    await axios.post(API_URL, formData, { headers: { "Content-Type": "multipart/form-data" } });
-    setTimeout(() => {
-      navigate("/")
-    }, 3000);
-    //navigate("/");
+
+    try {
+      await axios.post(API_URL, formData, { headers: { "Content-Type": "multipart/form-data" } });
+      setMessage({ type: "success", text: "Item created successfully!" });
+      setTimeout(() => navigate("/"), 2000);
+    } catch (err) {
+      setMessage({ type: "error", text: "Failed to create item." });
+    }
   };
 
   return (
     <div className="p-6 max-w-lg mx-auto">
       <h1 className="text-2xl font-bold mb-4">Add New Item</h1>
+
+      {message && (
+        <div className={`p-3 mb-4 rounded ${message.type === "success" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+          {message.text}
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input type="text" placeholder="Item Name" className="w-full border p-2 rounded" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
-        <textarea placeholder="Description" className="w-full border p-2 rounded" value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
+        <input type="text" placeholder="Item Name" className="w-full border p-2 rounded"
+          value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
+        <textarea placeholder="Description" className="w-full border p-2 rounded"
+          value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
         <input type="file" multiple accept="image/*" onChange={(e) => setImages(e.target.files)} className="w-full" />
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">Create</button>
       </form>
@@ -96,10 +124,13 @@ function ItemUpdate() {
   const { id } = useParams();
   const [form, setForm] = useState({ name: "", description: "" });
   const [images, setImages] = useState([]);
+  const [message, setMessage] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${API_URL}/${id}`).then((res) => setForm({ name: res.data.name, description: res.data.description }));
+    axios.get(`${API_URL}/${id}`)
+      .then((res) => setForm({ name: res.data.name, description: res.data.description }))
+      .catch(() => setMessage({ type: "error", text: "Failed to load item." }));
   }, [id]);
 
   const handleSubmit = async (e) => {
@@ -110,16 +141,31 @@ function ItemUpdate() {
     for (let i = 0; i < images.length; i++) {
       formData.append("images", images[i]);
     }
-    await axios.put(`${API_URL}/${id}`, formData, { headers: { "Content-Type": "multipart/form-data" } });
-    navigate(`/items/${id}`);
+
+    try {
+      await axios.put(`${API_URL}/${id}`, formData, { headers: { "Content-Type": "multipart/form-data" } });
+      setMessage({ type: "success", text: "Item updated successfully!" });
+      setTimeout(() => navigate(`/items/${id}`), 2000);
+    } catch (err) {
+      setMessage({ type: "error", text: "Failed to update item." });
+    }
   };
 
   return (
     <div className="p-6 max-w-lg mx-auto">
       <h1 className="text-2xl font-bold mb-4">Update Item</h1>
+
+      {message && (
+        <div className={`p-3 mb-4 rounded ${message.type === "success" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+          {message.text}
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input type="text" placeholder="Item Name" className="w-full border p-2 rounded" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
-        <textarea placeholder="Description" className="w-full border p-2 rounded" value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
+        <input type="text" placeholder="Item Name" className="w-full border p-2 rounded"
+          value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
+        <textarea placeholder="Description" className="w-full border p-2 rounded"
+          value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
         <input type="file" multiple accept="image/*" onChange={(e) => setImages(e.target.files)} className="w-full" />
         <button type="submit" className="bg-yellow-500 text-white px-4 py-2 rounded">Update</button>
       </form>
