@@ -72,7 +72,10 @@ function ItemCreate() {
       formData.append("images", images[i]);
     }
     await axios.post(API_URL, formData, { headers: { "Content-Type": "multipart/form-data" } });
-    navigate("/");
+    setTimeout(() => {
+      navigate("/")
+    }, 3000);
+    //navigate("/");
   };
 
   return (
