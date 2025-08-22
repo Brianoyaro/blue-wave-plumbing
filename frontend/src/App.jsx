@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/items"; // backend base URL
+const API_URL = "https://blue-wave-plumbing.onrender.com/api/items/"; // backend base URL
 
 // ------------------ Item List ------------------
 function ItemList() {
