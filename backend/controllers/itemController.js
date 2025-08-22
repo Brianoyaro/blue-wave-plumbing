@@ -1,76 +1,108 @@
-
-// controllers/itemController.js
 const Item = require("../models/Item");
+const cloudinary = require("cloudinary").v2;
 
+// ------------------ GET ALL (with search & filter) ------------------
 exports.getItems = async (req, res) => {
   try {
-    const items = await Item.find();
-    res.json(items);
+    const { search, category } = req.query;
+
+    let query = {};
+
+    // search by name or description
+    if (search) {
+      query.$or = [
+        { name: { $regex: search, $options: "i" } },
+        { description: { $regex: search, $options: "i" } },
+      ];
+    }
+
+    // filter by category
+    if (category) {
+      query.category = category;
+    }
+
+    const items = await Item.find(query).sort({ createdAt: -1 });
+    const categories = await Item.distinct("category");
+
+    res.json({ items, categories });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: "Failed to fetch items", details: err.message });
   }
 };
 
+// ------------------ GET BY ID ------------------
 exports.getItemById = async (req, res) => {
   try {
     const item = await Item.findById(req.params.id);
     if (!item) return res.status(404).json({ error: "Item not found" });
     res.json(item);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: "Error retrieving item", details: err.message });
   }
 };
 
+// ------------------ CREATE ------------------
 exports.createItem = async (req, res) => {
   try {
-    const { name, description, price } = req.body;
-    const imageUrls = req.files.map(file => file.path);
+    const { name, description, price, category, piecesAvailable } = req.body;
+
+    if (!name || !category) {
+      return res.status(400).json({ error: "Name and category are required" });
+    }
+
+    const imageUrls = req.files?.map(file => file.path) || [];
 
     const newItem = new Item({
       name,
       description,
       price,
+      category,
+      piecesAvailable,
       images: imageUrls,
     });
 
     await newItem.save();
-    res.status(201).json(newItem);
+    res.status(201).json({ message: "Item created successfully", item: newItem });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: "Failed to create item", details: err.message });
   }
 };
 
-// Update item (with optional new images, max 10 total)
+// ------------------ UPDATE ------------------
 exports.putItem = async (req, res) => {
   try {
-    const { name, description, price } = req.body;
+    const { name, description, price, category, piecesAvailable } = req.body;
     const item = await Item.findById(req.params.id);
     if (!item) return res.status(404).json({ error: "Item not found" });
 
-    // Delete old images from Cloudinary if new ones are uploaded
-    if (req.files.length > 0) {
+    // Handle new images if uploaded
+    if (req.files && req.files.length > 0) {
       for (const img of item.images) {
-        await cloudinary.uploader.destroy(img.public_id);
+        try {
+          await cloudinary.uploader.destroy(img.public_id);
+        } catch (err) {
+          console.warn("Failed to delete old image from Cloudinary:", err.message);
+        }
       }
-      item.images = req.files.map((file) => ({
-        url: file.path,
-        public_id: file.filename,
-      }));
+      item.images = req.files.map((file) => file.path);
     }
 
+    // Update fields if provided
     item.name = name || item.name;
     item.description = description || item.description;
-    item.price = price || item.price;
+    item.price = price ?? item.price;
+    item.category = category || item.category;
+    item.piecesAvailable = piecesAvailable ?? item.piecesAvailable;
 
     await item.save();
-    res.json(item);
+    res.json({ message: "Item updated successfully", item });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: "Failed to update item" });
+    console.error("Update error:", err);
+    res.status(500).json({ error: "Failed to update item", details: err.message });
   }
 };
 
-// Delete item
+// ------------------ DELETE ------------------
 exports.deleteItem = async (req, res) => {
   try {
     const item = await Item.findById(req.params.id);
@@ -78,12 +110,17 @@ exports.deleteItem = async (req, res) => {
 
     // Delete images from Cloudinary
     for (const img of item.images) {
-      await cloudinary.uploader.destroy(img.public_id);
+      try {
+        await cloudinary.uploader.destroy(img.public_id);
+      } catch (err) {
+        console.warn("Failed to delete image from Cloudinary:", err.message);
+      }
     }
 
     await item.deleteOne();
     res.json({ message: "Item deleted successfully" });
   } catch (err) {
-    res.status(500).json({ error: "Failed to delete item" });
+    res.status(500).json({ error: "Failed to delete item", details: err.message });
   }
 };
+
