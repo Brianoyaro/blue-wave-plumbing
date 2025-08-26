@@ -46,7 +46,7 @@ function ItemDetail() {
 
         {/* Right - Price & Availability */}
         <div className="border rounded-xl p-4 shadow-md">
-          <p className="text-2xl font-bold mb-2">${item.price}</p>
+          <p className="text-2xl font-bold mb-2">KES {item.price}</p>
           <p className="text-gray-600 mb-4">
             {item.piecesAvailable} pieces available
           </p>
