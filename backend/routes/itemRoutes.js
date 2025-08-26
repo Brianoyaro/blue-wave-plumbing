@@ -1,7 +1,7 @@
 // routes/itemRoutes.js
 const express = require("express");
 const router = express.Router();
-const { getItems, getItemById, createItem, putItem, deleteItem } = require("../controllers/itemController");
+const { getItems, getItemById, createItem, putItem, deleteItem, getCategoryItems } = require("../controllers/itemController");
 const upload = require("../utils/multerCloudinary");
 
 // Routes

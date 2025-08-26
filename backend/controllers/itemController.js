@@ -4,55 +4,74 @@ const cloudinary = require("cloudinary").v2;
 // ------------------ GET ALL (Grouped by Category or Full Category View) ------------------
 exports.getItems = async (req, res) => {
   try {
-    const { search, category, limit = 6, all = false, page = 1 } = req.query;
-    const query = {};
+    // const { search, category, limit = 6, all = false, page = 1 } = req.query;
+    // const query = {};
 
-    // Search
-    if (search) {
-      query.$or = [
-        { name: { $regex: search, $options: "i" } },
-        { description: { $regex: search, $options: "i" } },
-      ];
-    }
+    // // Search
+    // if (search) {
+    //   query.$or = [
+    //     { name: { $regex: search, $options: "i" } },
+    //     { description: { $regex: search, $options: "i" } },
+    //   ];
+    // }
 
-    // Filter by category
-    if (category) {
-      query.category = category;
-    }
+    // // Filter by category
+    // if (category) {
+    //   query.category = category;
+    // }
 
-    const categories = await Item.distinct("category");
+    // const categories = await Item.distinct("category");
 
-    // If category + all=true → return all items in that category
-    if (category && all === "true") {
-      const items = await Item.find(query)
-        .sort({ createdAt: -1 })
-        .skip((page - 1) * limit)
-        .limit(parseInt(limit));
-      const totalItems = await Item.countDocuments(query);
+    // // If category + all=true → return all items in that category
+    // if (category && all === "true") {
+    //   const items = await Item.find(query)
+    //     .sort({ createdAt: -1 })
+    //     .skip((page - 1) * limit)
+    //     .limit(parseInt(limit));
+    //   const totalItems = await Item.countDocuments(query);
 
-      return res.json({
-        items,
-        categories,
-        pagination: {
-          totalItems,
-          totalPages: Math.ceil(totalItems / limit),
-          currentPage: parseInt(page),
+    //   return res.json({
+    //     items,
+    //     categories,
+    //     pagination: {
+    //       totalItems,
+    //       totalPages: Math.ceil(totalItems / limit),
+    //       currentPage: parseInt(page),
+    //     },
+    //   });
+    // }
+
+    // // Otherwise → return grouped items, each category limited
+    // let grouped = {};
+    // for (const c of categories) {
+    //   const items = await Item.find({ ...query, category: c })
+    //     .sort({ createdAt: -1 })
+    //     .limit(parseInt(limit));
+    //   if (items.length > 0) {
+    //     grouped[c] = items;
+    //   }
+    // }
+
+    // res.json({ grouped, categories });
+
+    // Aggregation approach to group items by category
+    const items = await Item.aggregate([
+      {
+        $group: {
+          _id: "$category",      // group by category field
+          items: { $push: "$$ROOT" }, // push all documents in this category
         },
-      });
-    }
+      },
+      {
+        $project: {
+          _id: 0,
+          category: "$_id",   // rename _id to category
+          items: 1,
+        },
+      },
+    ]);
 
-    // Otherwise → return grouped items, each category limited
-    let grouped = {};
-    for (const c of categories) {
-      const items = await Item.find({ ...query, category: c })
-        .sort({ createdAt: -1 })
-        .limit(parseInt(limit));
-      if (items.length > 0) {
-        grouped[c] = items;
-      }
-    }
-
-    res.json({ grouped, categories });
+    res.json(items);
   } catch (err) {
     res.status(500).json({ error: "Failed to fetch items", details: err.message });
   }
@@ -147,3 +166,4 @@ exports.deleteItem = async (req, res) => {
   }
 };
 
+// ------------------ GET ITEMS BY CATEGORY ------------------
