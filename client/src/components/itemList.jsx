@@ -31,7 +31,7 @@ function ItemList() {
                 />
                 <div className="p-4">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
-                  <p className="text-gray-500">${item.price}</p>
+                  <p className="text-gray-500">{item.price} KES</p>
                   <p className="text-sm text-gray-400">{item.piecesAvailable} available</p>
                 </div>
               </Link>

@@ -18,7 +18,8 @@ function ItemList() {
     fetchItems();
   }, []);
 
-  const fallbackImage = "https://via.placeholder.com/400x300?text=No+Image";
+  // const fallbackImage = "https://via.placeholder.com/400x300?text=No+Image";
+  const fallbackImage = "https://via.placeholder.com/300";
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
