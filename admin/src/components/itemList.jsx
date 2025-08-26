@@ -20,7 +20,7 @@ function ItemList() {
   }, []);
 
   // const fallbackImage = "https://via.placeholder.com/400x300?text=No+Image";
-  const fallbackImage = "https://via.placeholder.com/300";
+  // const fallbackImage = "https://via.placeholder.com/300";
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
@@ -41,10 +41,10 @@ function ItemList() {
               {/* Item Image */}
               <div className="w-full h-56 overflow-hidden">
                 <img
-                  src={item.images?.[0] || fallbackImage}
+                  src={item.images?.[0]}
                   alt={item.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  onError={(e) => (e.currentTarget.src = fallbackImage)}
+                  onError={(e) => (console.error("Image load error:", e))}
                 />
               </div>
 
