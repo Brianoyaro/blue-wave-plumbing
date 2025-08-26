@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 function ItemList() {
   const [items, setItems] = useState([]);
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get("/api/items");
+        const response = await axios.get(backendURL);
         setItems(response.data);
       } catch (error) {
         console.error("Failed to fetch items:", error);

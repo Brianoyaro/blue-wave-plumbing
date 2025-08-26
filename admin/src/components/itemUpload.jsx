@@ -12,6 +12,7 @@ const UploadForm = () => {
   });
 
   const [previewImages, setPreviewImages] = useState([]);
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Handle input change
   const handleChange = (e) => {
@@ -43,7 +44,7 @@ const UploadForm = () => {
     });
 
     try {
-      await axios.post("http://localhost:5000/api/items", data, {
+      await axios.post(`${backendURL}`, data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Item uploaded successfully!");

@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 function ItemList() {
   const [categories, setCategories] = useState([]);
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/items/grouped")
+    axios.get(`${backendURL}`)
       .then(res => setCategories(res.data))
       .catch(err => console.error(err));
   }, []);

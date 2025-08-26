@@ -5,9 +5,10 @@ import axios from "axios";
 function ItemDetail() {
   const { id } = useParams();
   const [item, setItem] = useState(null);
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/items/${id}`)
+    axios.get(`${backendURL}/${id}`)
       .then(res => setItem(res.data))
       .catch(err => console.error(err));
   }, [id]);

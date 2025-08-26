@@ -7,12 +7,13 @@ function ItemDetail() {
   const navigate = useNavigate();
   const [item, setItem] = useState(null);
   const fallbackImage = "https://via.placeholder.com/400x300?text=No+Image";
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Fetch item by ID
   useEffect(() => {
     const fetchItem = async () => {
       try {
-        const res = await axios.get(`/api/items/${id}`);
+        const res = await axios.get(`${backendURL}/${id}`);
         setItem(res.data);
       } catch (err) {
         console.error(err);

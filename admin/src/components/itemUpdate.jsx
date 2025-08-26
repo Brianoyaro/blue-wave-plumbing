@@ -16,11 +16,12 @@ const ItemUpdate = () => {
   });
 
   const [previewImages, setPreviewImages] = useState([]);
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Fetch existing item data
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/items/${id}`)
+      .get(`${backendURL}/${id}`)
       .then((res) => {
         const item = res.data;
         setFormData({
@@ -66,7 +67,7 @@ const ItemUpdate = () => {
     });
 
     try {
-      await axios.put(`http://localhost:5000/api/items/${id}`, data, {
+      await axios.put(`${backendURL}/${id}`, data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Item updated successfully!");
