@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import ItemList from "./components/ItemList";
-import ItemDetail from "./components/ItemDetail";
-import ItemUpdate from "./components/ItemUpdate";
-import ItemUpload from "./components/ItemUpload";
+import Navbar from "./components/nav";
+import ItemList from "./components/itemList";
+import ItemDetail from "./components/itemDetail";
+import ItemUpdate from "./components/itemUpdate";
+import ItemUpload from "./components/itemUpload";
 
 function App() {
   return (
