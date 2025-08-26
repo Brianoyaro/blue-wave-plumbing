@@ -11,6 +11,7 @@ function ItemList() {
       try {
         const response = await axios.get(`${backendURL}`);
         setItems(response.data);
+        console.log("Fetched items:", response.data);
       } catch (error) {
         console.error("Failed to fetch items:", error);
       }
