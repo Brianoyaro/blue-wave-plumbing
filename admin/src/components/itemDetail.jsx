@@ -14,6 +14,7 @@ function ItemDetail() {
     const fetchItem = async () => {
       try {
         const res = await axios.get(`${backendURL}/${id}`);
+        console.log(res.data);
         setItem(res.data);
       } catch (err) {
         console.error(err);

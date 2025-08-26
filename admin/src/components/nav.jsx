@@ -13,7 +13,7 @@ function Navbar() {
         {/* Links */}
         <div className="space-x-6 flex items-center">
           <NavLink
-            to="/home"
+            to="/"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-600 font-semibold"
