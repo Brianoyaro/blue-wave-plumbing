@@ -27,7 +27,7 @@ function ItemDetail() {
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to delete this item?")) {
       try {
-        await axios.delete(`/api/items/${id}`);
+        await axios.delete(`${backendURL}/${id}`);
         alert("Item deleted successfully!");
         navigate("/"); // redirect after delete
       } catch (err) {
