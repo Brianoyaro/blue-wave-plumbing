@@ -20,7 +20,7 @@ function ItemList() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {cat.items.map(item => (
               <Link 
-                to={`/items/${item._id}`} 
+                to={`/item/${item._id}`} 
                 key={item._id} 
                 className="block rounded-2xl overflow-hidden shadow hover:shadow-lg transition"
               >
