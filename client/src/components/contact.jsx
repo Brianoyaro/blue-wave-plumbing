@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   const handleEmailClick = () => {
-    const url = `mailto:brianoyaro@gmail.com?subject=${encodeURIComponent(emailSubject)}`;
+    const url = `mailto:bluewaveharsuppliers@gmail.com?subject=${encodeURIComponent(emailSubject)}`;
     window.location.href = url;
   };
 
@@ -47,7 +47,7 @@ const Contact = () => {
                     onClick={handleEmailClick}
                     className="text-blue-600 hover:text-blue-800 transition-colors"
                   >
-                    brianoyaro@gmail.com
+                    bluewaveharsuppliers@gmail.com
                   </button>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                     onClick={handleWhatsAppClick}
                     className="text-green-600 hover:text-green-800 transition-colors"
                   >
-                    +254 700 000 000
+                    +254797965768
                   </button>
                   <p className="text-sm text-gray-500">How can we help you?</p>
                 </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappNumber = "254700000000";
+  const whatsappNumber = "254797965768";
   const whatsappMessage = "Bluewave-whatsapp contact";
 
   const handleWhatsAppClick = () => {
