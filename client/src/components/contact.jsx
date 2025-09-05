@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
-  const whatsappNumber = "254700000000";
+  const whatsappNumber = "254797965768";
   const whatsappMessage = "Bluewave-whatsapp contact";
   const emailSubject = "Bluewave-contact";
   const shopLocation = "https://maps.google.com/maps?q=-1.3802033%2C36.7657133&z=17&hl=en";
