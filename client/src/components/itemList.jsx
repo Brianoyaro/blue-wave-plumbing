@@ -19,7 +19,7 @@ function ItemList() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">Our Products & Services</h1>
           <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-            Discover our comprehensive range of plumbing, masonry, and electrical solutions
+            Discover our comprehensive range of plumbing solutions
           </p>
         </div>
 

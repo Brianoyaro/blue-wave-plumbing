@@ -22,7 +22,7 @@ function ItemDetail() {
         <nav className="mb-6" aria-label="Breadcrumb">
           <div className="flex items-center space-x-2 text-sm">
             <Link to="/" className="text-blue-600 hover:text-blue-800 transition-colors">
-              Shop
+              View Items
             </Link>
             <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -92,7 +92,7 @@ function ItemDetail() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href={`mailto:brianoyaro@gmail.com?subject=Inquiry about ${encodeURIComponent(item.name)}`}
+              href={`mailto:bluewaveharsuppliers@gmail.com?subject=Inquiry about ${encodeURIComponent(item.name)}`}
               className="bg-white text-blue-800 hover:bg-blue-50 px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@ function ItemDetail() {
               Send Email
             </a>
             <a
-              href={`https://wa.me/254700000000?text=Hi, I'm interested in ${encodeURIComponent(item.name)}`}
+              href={`https://wa.me/254797965768?text=Hi, I'm interested in ${encodeURIComponent(item.name)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"

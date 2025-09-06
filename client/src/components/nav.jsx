@@ -26,7 +26,7 @@ function Navbar() {
             Contact Us
           </Link>
           <Link to="/" className="text-blue-100 hover:text-white transition-colors font-medium">
-            Shop
+            Browse Items
           </Link>
         </div>
 

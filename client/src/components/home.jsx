@@ -8,18 +8,18 @@ function Home() {
       {/* Hero Section */}
       <section className="text-center py-16 md:py-24">
         <h1 className="text-5xl font-bold text-gray-800 mb-6">
-          Quality Plumbing & Masonry Materials in Nairobi
+          Quality Plumbing in Rongai
         </h1>
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
           Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span> — 
-          your trusted source for durable, pocket-friendly plumbing, masonry, and 
-          construction supplies. We make it easy to build with confidence.
+          your trusted source for durable, pocket-friendly plumbing 
+          supplies. We make it easy to build with confidence.
         </p>
         <Link
           to="/"
           className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
         >
-          Shop Now
+          Browse Items
         </Link>
       </section>
 
@@ -109,7 +109,7 @@ function Home() {
           to="/"
           className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
         >
-          Start Shopping
+          View Items and request a quote
         </Link>
       </section>
     </div>
