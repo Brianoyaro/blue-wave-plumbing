@@ -9,7 +9,7 @@ function About() {
       {/* Intro Paragraph */}
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">
         Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>, 
-        your trusted partner in providing high-quality plumbing, masonry, and construction 
+        your trusted partner in providing high-quality plumbing 
         materials across Nairobi. We are committed to offering our customers reliable, 
         affordable, and durable solutions that make every project—big or small—successful. 
       </p>
@@ -19,7 +19,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-semibold text-gray-700 mb-3">Our Mission</h2>
           <p className="text-gray-600 leading-relaxed">
-            At Blue-Wave, our mission is simple: to make quality construction 
+            At Blue-Wave, our mission is simple: to make quality plumbing 
             materials accessible and affordable. We aim to be the go-to supplier 
             for homeowners, contractors, and businesses in Nairobi who value 
             both quality and cost-effectiveness.
@@ -32,7 +32,7 @@ function About() {
             <li><strong>Customer-Centric:</strong> We prioritize your needs and satisfaction.</li>
             <li><strong>Affordability:</strong> Quality products at pocket-friendly prices.</li>
             <li><strong>Integrity:</strong> We deliver exactly what we promise.</li>
-            <li><strong>Community Focused:</strong> Serving Nairobi and its neighborhoods with pride.</li>
+            <li><strong>Community Focused:</strong> Serving Rongain, Nairobi and its neighborhoods with pride.</li>
           </ul>
         </div>
       </div>
