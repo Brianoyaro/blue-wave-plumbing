@@ -4,58 +4,23 @@ const cloudinary = require("cloudinary").v2;
 // ------------------ GET ALL (Grouped by Category or Full Category View) ------------------
 exports.getItems = async (req, res) => {
   try {
-    // const { search, category, limit = 6, all = false, page = 1 } = req.query;
-    // const query = {};
+    const { search } = req.query;
+    
+    // Build search query
+    let matchQuery = {};
+    if (search) {
+      matchQuery = {
+        $or: [
+          { name: { $regex: search, $options: "i" } },
+          { description: { $regex: search, $options: "i" } },
+          { category: { $regex: search, $options: "i" } }
+        ]
+      };
+    }
 
-    // // Search
-    // if (search) {
-    //   query.$or = [
-    //     { name: { $regex: search, $options: "i" } },
-    //     { description: { $regex: search, $options: "i" } },
-    //   ];
-    // }
-
-    // // Filter by category
-    // if (category) {
-    //   query.category = category;
-    // }
-
-    // const categories = await Item.distinct("category");
-
-    // // If category + all=true → return all items in that category
-    // if (category && all === "true") {
-    //   const items = await Item.find(query)
-    //     .sort({ createdAt: -1 })
-    //     .skip((page - 1) * limit)
-    //     .limit(parseInt(limit));
-    //   const totalItems = await Item.countDocuments(query);
-
-    //   return res.json({
-    //     items,
-    //     categories,
-    //     pagination: {
-    //       totalItems,
-    //       totalPages: Math.ceil(totalItems / limit),
-    //       currentPage: parseInt(page),
-    //     },
-    //   });
-    // }
-
-    // // Otherwise → return grouped items, each category limited
-    // let grouped = {};
-    // for (const c of categories) {
-    //   const items = await Item.find({ ...query, category: c })
-    //     .sort({ createdAt: -1 })
-    //     .limit(parseInt(limit));
-    //   if (items.length > 0) {
-    //     grouped[c] = items;
-    //   }
-    // }
-
-    // res.json({ grouped, categories });
-
-    // Aggregation approach to group items by category
+    // Aggregation approach to group items by category with search
     const items = await Item.aggregate([
+      ...(Object.keys(matchQuery).length > 0 ? [{ $match: matchQuery }] : []),
       {
         $group: {
           _id: "$category",      // group by category field
@@ -167,3 +132,39 @@ exports.deleteItem = async (req, res) => {
 };
 
 // ------------------ GET ITEMS BY CATEGORY ------------------
+exports.getItemsByCategory = async (req, res) => {
+  try {
+    const { category } = req.params;
+    const { search, page = 1, limit = 12 } = req.query;
+    
+    let query = { category };
+    
+    // Add search functionality within category
+    if (search) {
+      query.$or = [
+        { name: { $regex: search, $options: "i" } },
+        { description: { $regex: search, $options: "i" } }
+      ];
+    }
+    
+    const items = await Item.find(query)
+      .sort({ createdAt: -1 })
+      .skip((page - 1) * limit)
+      .limit(parseInt(limit));
+      
+    const totalItems = await Item.countDocuments(query);
+    
+    res.json({
+      items,
+      category,
+      pagination: {
+        totalItems,
+        totalPages: Math.ceil(totalItems / limit),
+        currentPage: parseInt(page),
+        hasMore: page * limit < totalItems
+      }
+    });
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch category items", details: err.message });
+  }
+};

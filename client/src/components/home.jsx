@@ -8,12 +8,10 @@ function Home() {
       {/* Hero Section */}
       <section className="text-center py-16 md:py-24">
         <h1 className="text-5xl font-bold text-gray-800 mb-6">
-          Quality Plumbing in Rongai
+          Blue-Wave Plumbing Shop in Rongai
         </h1>
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span> — 
-          your trusted source for durable, pocket-friendly plumbing 
-          supplies. We make it easy to build with confidence.
+          Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>  your trusted source for durable, pocket-friendly plumbing supplies. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Build with confidence!
         </p>
         <Link
           to="/"
@@ -30,44 +28,45 @@ function Home() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1600566752355-35792bedcfea"
-              alt="Plumbing"
-              className="w-full h-56 object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="PPR pipes & fittings" className="w-full h-56 object-cover" />
             <div className="p-4">
-              <h3 className="text-xl font-semibold">Plumbing</h3>
-              <p className="text-gray-600">
-                Pipes, fittings, fixtures, and accessories built to last.
-              </p>
+              <h3 className="text-xl font-semibold">PPR pipes & PPR fittings</h3>
+              <p className="text-gray-600">High-quality PPR pipes and fittings for all plumbing needs.</p>
             </div>
           </div>
-
           <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1581091870627-3c1c10e8e3be"
-              alt="Masonry"
-              className="w-full h-56 object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1581091870627-3c1c10e8e3be" alt="Gutters & accessories" className="w-full h-56 object-cover" />
             <div className="p-4">
-              <h3 className="text-xl font-semibold">Masonry</h3>
-              <p className="text-gray-600">
-                Bricks, cement, blocks, and other strong building essentials.
-              </p>
+              <h3 className="text-xl font-semibold">Gutters & accessories</h3>
+              <p className="text-gray-600">Durable gutters and accessories for effective water management.</p>
             </div>
           </div>
-
           <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1590658006820-5f9b06d98e36"
-              alt="Construction Materials"
-              className="w-full h-56 object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1590658006820-5f9b06d98e36" alt="GI pipes & fittings" className="w-full h-56 object-cover" />
             <div className="p-4">
-              <h3 className="text-xl font-semibold">Construction</h3>
-              <p className="text-gray-600">
-                Tools, materials, and everything you need for your projects.
-              </p>
+              <h3 className="text-xl font-semibold">GI pipes & GI fittings</h3>
+              <p className="text-gray-600">Galvanized iron pipes and fittings for robust plumbing solutions.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="Toilet & Accessories" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">Toilet & Accessories</h3>
+              <p className="text-gray-600">Modern toilets and accessories for every bathroom.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581091870627-3c1c10e8e3be" alt="General Items" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">General Items</h3>
+              <p className="text-gray-600">All-purpose plumbing items and accessories.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1590658006820-5f9b06d98e36" alt="Waste pipes & Fittings" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">Waste pipes & Fittings</h3>
+              <p className="text-gray-600">Reliable waste pipes and fittings for efficient drainage.</p>
             </div>
           </div>
         </div>

@@ -104,6 +104,7 @@ const ItemUpdate = () => {
             name="description"
             value={formData.description}
             onChange={handleChange}
+            required
             rows="3"
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
           ></textarea>
@@ -120,10 +121,12 @@ const ItemUpdate = () => {
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
           >
             <option value="">-- Select Category --</option>
-            <option value="Plumbing">Plumbing</option>
-            <option value="Masonry">Masonry</option>
-            <option value="Electrical">Electrical</option>
-            <option value="Other">Other</option>
+            <option value="PPR pipes & PPR fittings">PPR pipes & PPR fittings</option>
+            <option value="gutters & accessories">gutters & accessories</option>
+            <option value="GI pipes & GI fittings">GI pipes & GI fittings</option>
+            <option value="Toilet & Accessories">Toilet & Accessories</option>
+            <option value="General Items">General Items</option>
+            <option value="Waste pipes & Fittings">Waste pipes & Fittings</option>
           </select>
         </div>
 

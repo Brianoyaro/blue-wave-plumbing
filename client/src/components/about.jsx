@@ -8,10 +8,7 @@ function About() {
 
       {/* Intro Paragraph */}
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-        Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>, 
-        your trusted partner in providing high-quality plumbing 
-        materials across Nairobi. We are committed to offering our customers reliable, 
-        affordable, and durable solutions that make every project—big or small—successful. 
+        Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>, your trusted partner in providing high-quality plumbing materials across Nairobi. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Our commitment is to offer reliable, affordable, and durable solutions for every plumbing project.
       </p>
 
       {/* Mission & Values */}
@@ -19,10 +16,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-semibold text-gray-700 mb-3">Our Mission</h2>
           <p className="text-gray-600 leading-relaxed">
-            At Blue-Wave, our mission is simple: to make quality plumbing 
-            materials accessible and affordable. We aim to be the go-to supplier 
-            for homeowners, contractors, and businesses in Nairobi who value 
-            both quality and cost-effectiveness.
+            At Blue-Wave, our mission is simple: to make quality plumbing materials accessible and affordable. We aim to be the go-to supplier for homeowners, contractors, and businesses in Nairobi who value both quality and cost-effectiveness in plumbing solutions.
           </p>
         </div>
 

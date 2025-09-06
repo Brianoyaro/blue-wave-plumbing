@@ -9,6 +9,7 @@ import Home from "./components/home";
 import Navbar from "./components/nav";
 import ItemDetail from "./components/itemDetail";
 import ItemList from "./components/itemList";
+import CategoryPage from "./components/categoryPage";
 import WhatsAppButton from "./components/whatsappButton";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/items/:id" element={<ItemDetail />} />
+            <Route path="/category/:category" element={<CategoryPage />} />
           </Routes>   
         </main>
 

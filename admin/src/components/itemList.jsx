@@ -4,30 +4,40 @@ import { Link } from "react-router-dom";
 
 function ItemList() {
   const [categories, setCategories] = useState([]);
+  const [search, setSearch] = useState("");
   const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    axios.get(`${backendURL}`)
+    axios.get(`${backendURL}?search=${search}`)
       .then(res => setCategories(res.data))
       .catch(err => console.error(err));
-  }, []);
+  }, [search]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-8">
       <div className="max-w-6xl mx-auto p-6">
+        {/* Search Bar */}
+        <div className="mb-8 flex justify-center">
+          <input
+            type="text"
+            placeholder="Search by name or category..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            className="w-full max-w-md px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+          />
+        </div>
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-blue-900 mb-2">Manage Items</h1>
           <p className="text-blue-700">View and manage all your products and services</p>
         </div>
-
         {categories.map(cat => (
           <div key={cat.category} className="mb-10">
             <h2 className="text-2xl font-bold mb-6 text-blue-900 border-b-2 border-blue-300 pb-2">
               {cat.category}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {cat.items.map(item => (
+              {cat.items.slice(0, 6).map(item => (
                 <Link 
                   to={`/item/${item._id}`} 
                   key={item._id} 
@@ -60,9 +70,15 @@ function ItemList() {
                 </Link>
               ))}
             </div>
+            {cat.items.length > 6 && (
+              <div className="mt-4 text-right">
+                <Link to={`/category/${cat.category}`} className="text-blue-600 hover:underline font-medium">
+                  View more in {cat.category}
+                </Link>
+              </div>
+            )}
           </div>
         ))}
-        
         {categories.length === 0 && (
           <div className="text-center py-12">
             <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md mx-auto">
