@@ -10,7 +10,7 @@ function Footer() {
         <div>
           <h2 className="text-xl font-bold text-white mb-4">Blue-Wave</h2>
           <p className="text-sm">
-            Blue-Wave is your trusted partner in providing quality plumbing, masonry materials, and building supplies in Nairobi. 
+            Blue-Wave is your trusted partner in providing quality plumbing supplies in Nairobi. 
             We pride ourselves in being customer-friendly and pocket-friendly.
           </p>
         </div>
@@ -30,9 +30,9 @@ function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
           <ul className="space-y-2 text-sm">
-            <li><span className="font-semibold">Location:</span> Nairobi, Kenya</li>
-            <li><span className="font-semibold">Phone:</span> +254 712 345 678</li>
-            <li><span className="font-semibold">Email:</span> support@bluewave.co.ke</li>
+            <li><span className="font-semibold">Location:</span> Rongai, Kenya</li>
+            <li><span className="font-semibold">Phone:</span> +254797965768</li>
+            <li><span className="font-semibold">Email:</span> bluewaveharsuppliers@gmail.com</li>
           </ul>
         </div>
 

@@ -2,9 +2,10 @@ import React from 'react';
 
 const Contact = () => {
   const whatsappNumber = "254797965768";
-  const whatsappMessage = "Bluewave-whatsapp contact";
-  const emailSubject = "Bluewave-contact";
-  const shopLocation = "https://maps.google.com/maps?q=-1.3802033%2C36.7657133&z=17&hl=en";
+  const whatsappMessage = "Hi, i would like to get a quote of the following items: ";
+  const emailSubject = "Hi, i would like to get a quote of the following items: ";
+  // const shopLocation = "https://maps.google.com/maps?q=-1.3802033%2C36.7657133&z=17&hl=en";
+  const shopLocation = "https://maps.app.goo.gl/fQGyW5o5K5NNBxEA8?g_st=aw";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;

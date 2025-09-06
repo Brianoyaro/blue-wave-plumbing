@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const WhatsAppButton = () => {
   const [isHovered, setIsHovered] = useState(false);
   const whatsappNumber = "254797965768";
-  const whatsappMessage = "Bluewave-whatsapp contact";
+  const whatsappMessage = "Hi, i would like to get a quote of the following items: ";
 
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
