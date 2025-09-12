@@ -1,0 +1,25 @@
+{
+  "name": "Blue Wave Plumbing Materials",
+  "short_name": "Blue Wave Plumbing",
+  "description": "Quality plumbing materials in Rongai, Nairobi - PPR pipes, GI fittings, toilets & accessories",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "shopping"],
+  "lang": "en-KE"
+}

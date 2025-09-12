@@ -1,0 +1,41 @@
+<svg viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="96" cy="96" r="90" fill="#2563eb" stroke="#1d4ed8" stroke-width="4"/>
+  
+  <!-- Wave Elements -->
+  <path 
+    d="M36 84C52.8 72, 67.2 96, 84 84C100.8 72, 115.2 96, 132 84C148.8 72, 163.2 96, 180 84" 
+    stroke="#93c5fd" 
+    stroke-width="7" 
+    fill="none"
+    stroke-linecap="round"
+  />
+  <path 
+    d="M24 108C40.8 96, 55.2 120, 72 108C88.8 96, 103.2 120, 120 108C136.8 96, 151.2 120, 168 108" 
+    stroke="#dbeafe" 
+    stroke-width="6" 
+    fill="none"
+    stroke-linecap="round"
+  />
+  <path 
+    d="M48 132C64.8 120, 79.2 144, 96 132C112.8 120, 127.2 144, 144 132" 
+    stroke="#bfdbfe" 
+    stroke-width="5" 
+    fill="none"
+    stroke-linecap="round"
+  />
+  
+  <!-- Pipe/Plumbing Element -->
+  <rect x="84" y="36" width="10" height="60" fill="#f8fafc" rx="5"/>
+  <rect x="98" y="36" width="10" height="60" fill="#f8fafc" rx="5"/>
+  
+  <!-- Connection/Joint -->
+  <rect x="79" y="43" width="34" height="14" fill="#e2e8f0" rx="7"/>
+  <rect x="79" y="72" width="34" height="14" fill="#e2e8f0" rx="7"/>
+  
+  <!-- Drop/Water element -->
+  <path 
+    d="M96 48L103.2 36C103.2 31.2, 98.4 28.8, 96 28.8C93.6 28.8, 88.8 31.2, 88.8 36L96 48Z" 
+    fill="#3b82f6"
+  />
+</svg>
