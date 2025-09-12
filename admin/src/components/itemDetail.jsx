@@ -54,14 +54,14 @@ function ItemDetail() {
         </Link>
 
         {/* Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 mb-8">
           {item.images.length > 0 ? (
             item.images.map((img, index) => (
               <div key={index} className="relative group overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src={img || fallbackImage}
                   alt={`${item.name}-${index}`}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 sm:h-64 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   onError={(e) => (e.currentTarget.src = fallbackImage)}
                 />
               </div>
@@ -71,7 +71,7 @@ function ItemDetail() {
               <img
                 src={fallbackImage}
                 alt="placeholder"
-                className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                className="w-full h-48 sm:h-64 md:h-64 object-cover rounded-2xl shadow-lg"
               />
             </div>
           )}

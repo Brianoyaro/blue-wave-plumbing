@@ -36,7 +36,7 @@ function ItemList() {
             <h2 className="text-2xl font-bold mb-6 text-blue-900 border-b-2 border-blue-300 pb-2">
               {cat.category}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
               {cat.items.slice(0, 6).map(item => (
                 <Link 
                   to={`/item/${item._id}`} 
@@ -47,7 +47,7 @@ function ItemList() {
                     <img 
                       src={item.images?.[0] || "https://via.placeholder.com/400x300?text=No+Image"} 
                       alt={item.name} 
-                      className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-32 sm:h-48 md:h-60 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-2 right-2">
                       <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">
@@ -55,14 +55,14 @@ function ItemList() {
                       </span>
                     </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                  <div className="p-3 sm:p-4">
+                    <h3 className="text-sm sm:text-lg font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-1 sm:mb-2">
                       {item.name}
                     </h3>
-                    <p className="text-gray-600 text-sm line-clamp-2 mb-3">{item.description}</p>
-                    <div className="flex items-center text-blue-600 font-medium">
+                    <p className="text-gray-600 text-xs sm:text-sm line-clamp-2 mb-2 sm:mb-3">{item.description}</p>
+                    <div className="flex items-center text-blue-600 font-medium text-xs sm:text-sm">
                       <span>Manage Item</span>
-                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>
