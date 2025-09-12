@@ -42,7 +42,7 @@ const UploadForm = () => {
     });
 
     try {
-      await axios.post(`${backendURL}`, data, {
+      const response = await axios.post(`${backendURL}`, data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Item uploaded successfully!");
@@ -54,8 +54,9 @@ const UploadForm = () => {
       });
       setPreviewImages([]);
     } catch (error) {
-      console.error(error);
-      alert("Failed to upload item");
+      console.error("Upload error:", error);
+      const errorMessage = error.response?.data?.error || error.message || "Failed to upload item";
+      alert(`Failed to upload item: ${errorMessage}`);
     }
   };
 

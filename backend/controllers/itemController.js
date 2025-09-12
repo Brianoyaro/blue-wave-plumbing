@@ -56,18 +56,20 @@ exports.getItemById = async (req, res) => {
 // ------------------ CREATE ------------------
 exports.createItem = async (req, res) => {
   try {
-    const { name, description, price, category, piecesAvailable } = req.body;
+    const { name, description, category } = req.body;
     if (!name || !category) {
       return res.status(400).json({ error: "Name and category are required" });
+    }
+
+    if (!description) {
+      return res.status(400).json({ error: "Description is required" });
     }
 
     const imageUrls = req.files?.map(file => file.path) || [];
     const newItem = new Item({
       name,
       description,
-      price,
       category,
-      piecesAvailable,
       images: imageUrls,
     });
 
@@ -81,7 +83,7 @@ exports.createItem = async (req, res) => {
 // ------------------ UPDATE ------------------
 exports.putItem = async (req, res) => {
   try {
-    const { name, description, price, category, piecesAvailable } = req.body;
+    const { name, description, category } = req.body;
     const item = await Item.findById(req.params.id);
     if (!item) return res.status(404).json({ error: "Item not found" });
 
@@ -99,9 +101,7 @@ exports.putItem = async (req, res) => {
 
     item.name = name || item.name;
     item.description = description || item.description;
-    item.price = price ?? item.price;
     item.category = category || item.category;
-    item.piecesAvailable = piecesAvailable ?? item.piecesAvailable;
 
     await item.save();
     res.json({ message: "Item updated successfully", item });
