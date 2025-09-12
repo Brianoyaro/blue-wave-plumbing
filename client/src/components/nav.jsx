@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // icons for mobile toggle
+import BlueWaveLogo from "./BlueWaveLogo";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-gradient-to-r from-blue-800 to-blue-700 shadow-lg sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         
         {/* Left Logo */}
-        <Link to="/" className="text-2xl font-bold text-white hover:text-blue-200 transition-colors">
-          Bluewave
+        <Link to="/" className="hover:opacity-90 transition-opacity">
+          <BlueWaveLogo showText={true} />
         </Link>
 
         {/* Desktop Menu */}

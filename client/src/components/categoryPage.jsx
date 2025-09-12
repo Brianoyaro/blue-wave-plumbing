@@ -63,29 +63,29 @@ function CategoryPage() {
         ) : (
           <>
             {/* Items Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6 mb-8">
               {items.map(item => (
                 <Link 
                   to={`/items/${item._id}`} 
                   key={item._id} 
-                  className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="relative overflow-hidden">
                     <img 
                       src={item.images?.[0] || "https://via.placeholder.com/400x300?text=No+Image"} 
                       alt={item.name} 
-                      className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-32 sm:h-48 md:h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-2">
+                  <div className="p-3 sm:p-4 md:p-6">
+                    <h3 className="text-sm sm:text-lg md:text-xl font-semibold text-blue-900 group-hover:text-blue-700 transition-colors mb-1 sm:mb-2 line-clamp-2">
                       {item.name}
                     </h3>
-                    <p className="text-gray-600 text-sm line-clamp-2">{item.description}</p>
-                    <div className="mt-4 flex items-center text-blue-600 font-medium">
+                    <p className="text-gray-600 text-xs sm:text-sm line-clamp-2 mb-2 sm:mb-0 md:block hidden">{item.description}</p>
+                    <div className="mt-2 sm:mt-4 flex items-center text-blue-600 font-medium text-xs sm:text-sm">
                       <span>View Details</span>
-                      <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>

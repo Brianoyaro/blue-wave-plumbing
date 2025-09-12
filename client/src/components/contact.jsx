@@ -24,8 +24,8 @@ const Contact = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">Get in Touch</h1>
           <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-            We're here to help with all your plumbing, masonry, and electrical needs. 
-            Contact us today for professional service you can trust.
+            Need quality plumbing materials in Rongai, Nairobi? We're here to help with all your plumbing needs. 
+            Contact us today for the best prices and expert advice.
           </p>
         </div>
 
@@ -112,23 +112,31 @@ const Contact = () => {
 
             {/* Services */}
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Services</h3>
+              <h3 className="text-xl font-bold text-blue-900 mb-4">Our Products</h3>
               <div className="grid grid-cols-1 gap-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Professional Plumbing Services</span>
+                  <span className="text-gray-700">PPR Pipes & Fittings</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Quality Masonry Work</span>
+                  <span className="text-gray-700">GI Pipes & Fittings</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Electrical Installations & Repairs</span>
+                  <span className="text-gray-700">Gutters & Accessories</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Emergency Services Available</span>
+                  <span className="text-gray-700">Toilets & Bathroom Accessories</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span className="text-gray-700">Waste Pipes & Drainage</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span className="text-gray-700">General Plumbing Items</span>
                 </div>
               </div>
             </div>
@@ -138,7 +146,7 @@ const Contact = () => {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="p-6 border-b border-gray-200">
               <h2 className="text-2xl font-bold text-blue-900">Find Us Here</h2>
-              <p className="text-gray-600 mt-2">Visit our shop for all your construction needs</p>
+              <p className="text-gray-600 mt-2">Visit our plumbing materials shop in Rongai, Nairobi</p>
             </div>
             <div className="h-96 lg:h-full min-h-[400px]">
               <iframe
@@ -149,7 +157,7 @@ const Contact = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Bluewave Plumbing Shop Location"
+                title="Blue Wave Plumbing Materials Shop Location - Rongai, Nairobi"
               ></iframe>
             </div>
           </div>
@@ -158,10 +166,10 @@ const Contact = () => {
         {/* Call to Action */}
         <div className="mt-12 text-center">
           <div className="bg-blue-900 rounded-2xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Need Plumbing Materials?</h2>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Contact us today for a free consultation. We're committed to providing 
-              quality workmanship and excellent customer service.
+              Contact us today for the best deals on quality plumbing materials in Rongai, Nairobi. 
+              Expert advice and competitive prices guaranteed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 

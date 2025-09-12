@@ -1,0 +1,139 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
+function Home() {
+  return (
+    <div className="max-w-7xl mx-auto px-6">
+
+      {/* Hero Section */}
+      <section className="text-center py-16 md:py-24">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          Blue Wave Plumbing Materials - Rongai, Nairobi
+        </h1>
+        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          Your trusted source for quality plumbing materials in Rongai, Nairobi. We specialize in <span className="font-semibold text-blue-600">PPR pipes & fittings</span>, <span className="font-semibold text-blue-600">GI pipes & fittings</span>, <span className="font-semibold text-blue-600">gutters & accessories</span>, <span className="font-semibold text-blue-600">toilets & accessories</span>, and all plumbing supplies. Quality products at pocket-friendly prices!
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/"
+            className="bg-blue-600 text-white px-8 py-3 rounded-xl shadow hover:bg-blue-700 transition font-semibold"
+          >
+            Browse Our Products
+          </Link>
+          <Link
+            to="/contact"
+            className="bg-white border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-xl shadow hover:bg-blue-50 transition font-semibold"
+          >
+            Get Quote
+          </Link>
+        </div>
+      </section>
+        <h1 className="text-5xl font-bold text-gray-800 mb-6">
+          Blue-Wave Plumbing Shop in Rongai
+        </h1>
+        <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>  your trusted source for durable, pocket-friendly plumbing supplies. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Build with confidence!
+        </p>
+        <Link
+          to="/"
+          className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+        >
+          Browse Items
+        </Link>
+      </section>
+
+      {/* Categories Section */}
+      <section className="py-12">
+        <h2 className="text-3xl font-semibold text-gray-800 text-center mb-10">
+          Explore Our Categories
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="PPR pipes & fittings" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">PPR pipes & PPR fittings</h3>
+              <p className="text-gray-600">High-quality PPR pipes and fittings for all plumbing needs.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581091870627-3c1c10e8e3be" alt="Gutters & accessories" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">Gutters & accessories</h3>
+              <p className="text-gray-600">Durable gutters and accessories for effective water management.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1590658006820-5f9b06d98e36" alt="GI pipes & fittings" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">GI pipes & GI fittings</h3>
+              <p className="text-gray-600">Galvanized iron pipes and fittings for robust plumbing solutions.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea" alt="Toilet & Accessories" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">Toilet & Accessories</h3>
+              <p className="text-gray-600">Modern toilets and accessories for every bathroom.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581091870627-3c1c10e8e3be" alt="General Items" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">General Items</h3>
+              <p className="text-gray-600">All-purpose plumbing items and accessories.</p>
+            </div>
+          </div>
+          <div className="rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1590658006820-5f9b06d98e36" alt="Waste pipes & Fittings" className="w-full h-56 object-cover" />
+            <div className="p-4">
+              <h3 className="text-xl font-semibold">Waste pipes & Fittings</h3>
+              <p className="text-gray-600">Reliable waste pipes and fittings for efficient drainage.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 text-center bg-blue-50 rounded-2xl my-12">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+          Why Choose Blue-Wave?
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="p-6 bg-white rounded-xl shadow">
+            <h3 className="font-bold text-xl mb-2">Pocket-Friendly</h3>
+            <p className="text-gray-600">
+              High-quality materials at affordable prices.
+            </p>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow">
+            <h3 className="font-bold text-xl mb-2">Trusted in Nairobi</h3>
+            <p className="text-gray-600">
+              Serving homeowners, contractors & businesses with pride.
+            </p>
+          </div>
+          <div className="p-6 bg-white rounded-xl shadow">
+            <h3 className="font-bold text-xl mb-2">Quality Guaranteed</h3>
+            <p className="text-gray-600">
+              Only the best, durable materials for your projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call-to-Action Section */}
+      <section className="text-center py-16">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">
+          Ready to Build With Confidence?
+        </h2>
+        <Link
+          to="/"
+          className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+        >
+          View Items and request a quote
+        </Link>
+      </section>
+    </div>
+  );
+}
+
+export default Home;
