@@ -12,7 +12,13 @@ function Navbar() {
         
         {/* Left Logo - Enhanced visibility */}
         <Link to="/" className="hover:opacity-95 transition-all duration-300 transform hover:scale-105">
-          <BluewaveLogo showText={true} textSize="text-2xl" className="h-14 w-auto" />
+          <BluewaveLogo 
+            showText={true} 
+            textSize="text-2xl" 
+            className="h-14 w-auto" 
+            textColor="text-white" 
+            subTextColor="text-blue-200"
+          />
         </Link>
 
         {/* Desktop Menu */}

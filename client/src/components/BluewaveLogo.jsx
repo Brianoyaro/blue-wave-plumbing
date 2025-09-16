@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BluewaveLogo = ({ className = "h-12 w-auto", showText = true, textSize = "text-xl" }) => {
+const BluewaveLogo = ({ className = "h-12 w-auto", showText = true, textSize = "text-xl", textColor = "text-blue-900", subTextColor = "text-blue-700" }) => {
   return (
     <div className={`flex items-center ${className}`}>
       {/* Logo Icon - Water droplet with swirly lines */}
@@ -64,10 +64,10 @@ const BluewaveLogo = ({ className = "h-12 w-auto", showText = true, textSize = "
       {/* Company Name */}
       {showText && (
         <div className="ml-3">
-          <div className={`font-bold text-blue-900 leading-tight ${textSize}`}>
+          <div className={`font-bold leading-tight ${textSize} ${textColor}`}>
             Bluewave Plumbers
           </div>
-          <div className="text-sm font-medium text-blue-700 -mt-1">
+          <div className={`text-sm font-medium -mt-1 ${subTextColor}`}>
             RONGAI • NAIROBI
           </div>
         </div>
