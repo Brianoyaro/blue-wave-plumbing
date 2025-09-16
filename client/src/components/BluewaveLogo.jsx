@@ -6,7 +6,7 @@ const BluewaveLogo = ({ className = "h-12 w-auto", showText = true, textSize = "
       {/* Logo Icon - Water droplet with swirly lines */}
       <svg 
         viewBox="0 0 60 60" 
-        className="h-12 w-12"
+        className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12"
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -63,11 +63,11 @@ const BluewaveLogo = ({ className = "h-12 w-auto", showText = true, textSize = "
       
       {/* Company Name */}
       {showText && (
-        <div className="ml-3">
-          <div className={`font-bold leading-tight ${textSize} ${textColor}`}>
+        <div className="ml-2 sm:ml-3">
+          <div className={`font-bold leading-tight text-sm sm:text-lg md:${textSize} ${textColor}`}>
             Bluewave Plumbers
           </div>
-          <div className={`text-sm font-medium -mt-1 ${subTextColor}`}>
+          <div className={`text-xs sm:text-sm font-medium -mt-1 ${subTextColor}`}>
             RONGAI • NAIROBI
           </div>
         </div>

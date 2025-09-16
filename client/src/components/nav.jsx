@@ -15,7 +15,7 @@ function Navbar() {
           <BluewaveLogo 
             showText={true} 
             textSize="text-2xl" 
-            className="h-14 w-auto" 
+            className="h-10 sm:h-12 md:h-14 w-auto" 
             textColor="text-white" 
             subTextColor="text-blue-200"
           />
