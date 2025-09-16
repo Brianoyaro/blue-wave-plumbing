@@ -8,7 +8,7 @@ function Home() {
       {/* Hero Section */}
       <section className="text-center py-16 md:py-24">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-          Blue Wave Plumbing Materials - Rongai, Nairobi
+          Bluewave Plumbers - Rongai, Nairobi
         </h1>
         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Your trusted source for quality plumbing materials in Rongai, Nairobi. We specialize in <span className="font-semibold text-blue-600">PPR pipes & fittings</span>, <span className="font-semibold text-blue-600">GI pipes & fittings</span>, <span className="font-semibold text-blue-600">gutters & accessories</span>, <span className="font-semibold text-blue-600">toilets & accessories</span>, and all plumbing supplies. Quality products at pocket-friendly prices!
@@ -88,7 +88,7 @@ function Home() {
       {/* Why Choose Us Section */}
       <section className="py-16 text-center bg-blue-50 rounded-2xl my-12">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-          Why Choose Blue Wave Plumbing?
+          Why Choose Bluewave Plumbers?
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="p-6 bg-white rounded-xl shadow">

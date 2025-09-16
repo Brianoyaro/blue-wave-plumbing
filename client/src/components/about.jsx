@@ -8,7 +8,7 @@ function About() {
 
       {/* Intro Paragraph */}
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-        Welcome to <span className="font-semibold text-blue-600">Blue-Wave</span>, your trusted partner in providing high-quality plumbing materials across Nairobi. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Our commitment is to offer reliable, affordable, and durable solutions for every plumbing project.
+        Welcome to <span className="font-semibold text-blue-600">Bluewave Plumbers</span>, your trusted partner in providing high-quality plumbing materials across Nairobi. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Our commitment is to offer reliable, affordable, and durable solutions for every plumbing project.
       </p>
 
       {/* Mission & Values */}
@@ -16,7 +16,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-semibold text-gray-700 mb-3">Our Mission</h2>
           <p className="text-gray-600 leading-relaxed">
-            At Blue-Wave, our mission is simple: to make quality plumbing materials accessible and affordable. We aim to be the go-to supplier for homeowners, contractors, and businesses in Nairobi who value both quality and cost-effectiveness in plumbing solutions.
+            At Bluewave Plumbers, our mission is simple: to make quality plumbing materials accessible and affordable. We aim to be the go-to supplier for homeowners, contractors, and businesses in Nairobi who value both quality and cost-effectiveness in plumbing solutions.
           </p>
         </div>
 
@@ -33,12 +33,12 @@ function About() {
 
       {/* Why Choose Us */}
       <div className="bg-blue-50 p-8 rounded-2xl shadow">
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Why Choose Blue-Wave?</h2>
+        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Why Choose Bluewave Plumbers?</h2>
         <p className="text-gray-600 leading-relaxed mb-4">
           We understand that every project matters. That’s why we ensure our customers 
           receive top-quality products, timely service, and unbeatable value for their money. 
           Whether you’re renovating your home, building from the ground up, or sourcing 
-          materials for commercial projects, Blue-Wave has you covered.
+          materials for commercial projects, Bluewave Plumbers has you covered.
         </p>
         <p className="text-gray-600 leading-relaxed">
           With us, you don’t just buy materials—you invest in durability, reliability, 

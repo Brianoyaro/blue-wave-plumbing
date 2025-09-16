@@ -8,10 +8,9 @@ function Footer() {
         
         {/* Company Info */}
         <div>
-          <h2 className="text-xl font-bold text-white mb-4">Blue-Wave</h2>
-          <p className="text-sm">
-            Blue-Wave is your trusted partner in providing quality plumbing supplies in Nairobi. 
-            We pride ourselves in being customer-friendly and pocket-friendly.
+          <h2 className="text-xl font-bold text-white mb-4">Bluewave Plumbers</h2>
+          <p className="text-blue-100 mb-4 leading-relaxed">
+            Bluewave Plumbers is your trusted partner in providing quality plumbing supplies in Rongai, Nairobi and beyond.
           </p>
         </div>
 
@@ -50,7 +49,7 @@ function Footer() {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Blue-Wave. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Bluewave Plumbers. All Rights Reserved.</p>
       </div>
     </footer>
   );

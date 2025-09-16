@@ -1,41 +1,51 @@
-<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle -->
-  <circle cx="40" cy="40" r="38" fill="#2563eb" stroke="#1d4ed8" stroke-width="2"/>
-  
-  <!-- Wave Elements -->
+<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main water droplet shape -->
   <path 
-    d="M15 35C22 30, 28 40, 35 35C42 30, 48 40, 55 35C62 30, 68 40, 75 35" 
-    stroke="#93c5fd" 
-    stroke-width="3" 
-    fill="none"
-    stroke-linecap="round"
+    d="M30 8C30 8 42 20 42 32C42 38.627 36.627 44 30 44C23.373 44 18 38.627 18 32C18 20 30 8 30 8Z"
+    fill="url(#gradient1)"
+    stroke="#1e40af" 
+    stroke-width="1.5"
   />
+  
+  <!-- Swirly lines inside droplet - Nike-inspired curves -->
   <path 
-    d="M10 45C17 40, 23 50, 30 45C37 40, 43 50, 50 45C57 40, 63 50, 70 45" 
-    stroke="#dbeafe" 
+    d="M24 26C26 24, 28 26, 30 24C32 22, 34 24, 36 22"
+    stroke="#3b82f6" 
     stroke-width="2.5" 
     fill="none"
     stroke-linecap="round"
   />
   <path 
-    d="M20 55C27 50, 33 60, 40 55C47 50, 53 60, 60 55" 
-    stroke="#bfdbfe" 
+    d="M22 32C24 30, 26 32, 28 30C30 28, 32 30, 34 28C36 26, 38 28, 40 26"
+    stroke="#60a5fa" 
     stroke-width="2" 
     fill="none"
     stroke-linecap="round"
   />
-  
-  <!-- Pipe/Plumbing Element -->
-  <rect x="35" y="15" width="4" height="25" fill="#f8fafc" rx="2"/>
-  <rect x="41" y="15" width="4" height="25" fill="#f8fafc" rx="2"/>
-  
-  <!-- Connection/Joint -->
-  <rect x="33" y="18" width="14" height="6" fill="#e2e8f0" rx="3"/>
-  <rect x="33" y="30" width="14" height="6" fill="#e2e8f0" rx="3"/>
-  
-  <!-- Drop/Water element -->
   <path 
-    d="M40 20L43 15C43 13, 41 12, 40 12C39 12, 37 13, 37 15L40 20Z" 
-    fill="#3b82f6"
+    d="M25 38C27 36, 29 38, 31 36C33 34, 35 36, 37 34"
+    stroke="#93c5fd" 
+    stroke-width="1.5" 
+    fill="none"
+    stroke-linecap="round"
   />
+  
+  <!-- Small highlight droplet -->
+  <ellipse 
+    cx="32" 
+    cy="22" 
+    rx="2" 
+    ry="3" 
+    fill="#dbeafe"
+    opacity="0.8"
+  />
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
 </svg>

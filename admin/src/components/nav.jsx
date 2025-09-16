@@ -7,7 +7,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-white hover:text-blue-200 transition-colors">
-          Bluewave Admin
+          Bluewave Plumbers Admin
         </Link>
 
         {/* Links */}

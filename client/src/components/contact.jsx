@@ -157,7 +157,7 @@ const Contact = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Blue Wave Plumbing Materials Shop Location - Rongai, Nairobi"
+                title="Bluewave Plumbers Materials Shop Location - Rongai, Nairobi"
               ></iframe>
             </div>
           </div>

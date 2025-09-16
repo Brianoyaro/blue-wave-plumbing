@@ -1,32 +1,32 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // icons for mobile toggle
-import BlueWaveLogo from "./BlueWaveLogo";
+import BluewaveLogo from "./BluewaveLogo";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-800 to-blue-700 shadow-lg sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <nav className="bg-gradient-to-r from-blue-900 to-blue-800 shadow-xl sticky top-0 z-40 border-b-2 border-blue-600">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
-        {/* Left Logo */}
-        <Link to="/" className="hover:opacity-90 transition-opacity">
-          <BlueWaveLogo showText={true} />
+        {/* Left Logo - Enhanced visibility */}
+        <Link to="/" className="hover:opacity-95 transition-all duration-300 transform hover:scale-105">
+          <BluewaveLogo showText={true} textSize="text-2xl" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <Link to="/home" className="text-blue-100 hover:text-white transition-colors font-medium">
+          <Link to="/home" className="text-blue-100 hover:text-white transition-all duration-300 font-semibold text-lg hover:bg-blue-700 px-3 py-2 rounded-lg">
             Home
           </Link>
-          <Link to="/about" className="text-blue-100 hover:text-white transition-colors font-medium">
+          <Link to="/about" className="text-blue-100 hover:text-white transition-all duration-300 font-semibold text-lg hover:bg-blue-700 px-3 py-2 rounded-lg">
             About Us
           </Link>
-          <Link to="/contact" className="text-blue-100 hover:text-white transition-colors font-medium">
+          <Link to="/contact" className="text-blue-100 hover:text-white transition-all duration-300 font-semibold text-lg hover:bg-blue-700 px-3 py-2 rounded-lg">
             Contact Us
           </Link>
-          <Link to="/" className="text-blue-100 hover:text-white transition-colors font-medium">
+          <Link to="/" className="text-blue-100 hover:text-white transition-all duration-300 font-semibold text-lg hover:bg-blue-700 px-3 py-2 rounded-lg">
             Browse Items
           </Link>
         </div>
@@ -43,31 +43,31 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 space-y-3 bg-blue-800">
+        <div className="md:hidden px-6 pb-4 space-y-3 bg-blue-900 border-t border-blue-600">
           <Link 
             to="/home" 
-            className="block text-blue-100 hover:text-white transition-colors font-medium py-2"
+            className="block text-blue-100 hover:text-white hover:bg-blue-700 transition-all duration-300 font-semibold py-3 px-3 rounded-lg"
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link 
             to="/about" 
-            className="block text-blue-100 hover:text-white transition-colors font-medium py-2"
+            className="block text-blue-100 hover:text-white hover:bg-blue-700 transition-all duration-300 font-semibold py-3 px-3 rounded-lg"
             onClick={() => setIsOpen(false)}
           >
             About Us
           </Link>
           <Link 
             to="/contact" 
-            className="block text-blue-100 hover:text-white transition-colors font-medium py-2"
+            className="block text-blue-100 hover:text-white hover:bg-blue-700 transition-all duration-300 font-semibold py-3 px-3 rounded-lg"
             onClick={() => setIsOpen(false)}
           >
             Contact Us
           </Link>
           <Link 
             to="/" 
-            className="block text-blue-100 hover:text-white transition-colors font-medium py-2"
+            className="block text-blue-100 hover:text-white hover:bg-blue-700 transition-all duration-300 font-semibold py-3 px-3 rounded-lg"
             onClick={() => setIsOpen(false)}
           >
             Shop

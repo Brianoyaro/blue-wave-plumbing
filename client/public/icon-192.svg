@@ -1,41 +1,51 @@
 <svg viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle -->
-  <circle cx="96" cy="96" r="90" fill="#2563eb" stroke="#1d4ed8" stroke-width="4"/>
-  
-  <!-- Wave Elements -->
+  <!-- Main water droplet shape -->
   <path 
-    d="M36 84C52.8 72, 67.2 96, 84 84C100.8 72, 115.2 96, 132 84C148.8 72, 163.2 96, 180 84" 
+    d="M96 25.6C96 25.6 134.4 64 134.4 102.4C134.4 123.606 117.206 140.8 96 140.8C74.794 140.8 57.6 123.606 57.6 102.4C57.6 64 96 25.6 96 25.6Z"
+    fill="url(#gradient1)"
+    stroke="#1e40af" 
+    stroke-width="4.8"
+  />
+  
+  <!-- Swirly lines inside droplet - Nike-inspired curves -->
+  <path 
+    d="M76.8 83.2C83.2 76.8, 89.6 83.2, 96 76.8C102.4 70.4, 108.8 76.8, 115.2 70.4"
+    stroke="#3b82f6" 
+    stroke-width="8" 
+    fill="none"
+    stroke-linecap="round"
+  />
+  <path 
+    d="M70.4 102.4C76.8 96, 83.2 102.4, 89.6 96C96 89.6, 102.4 96, 108.8 89.6C115.2 83.2, 121.6 89.6, 128 83.2"
+    stroke="#60a5fa" 
+    stroke-width="6.4" 
+    fill="none"
+    stroke-linecap="round"
+  />
+  <path 
+    d="M80 121.6C86.4 115.2, 92.8 121.6, 99.2 115.2C105.6 108.8, 112 115.2, 118.4 108.8"
     stroke="#93c5fd" 
-    stroke-width="7" 
-    fill="none"
-    stroke-linecap="round"
-  />
-  <path 
-    d="M24 108C40.8 96, 55.2 120, 72 108C88.8 96, 103.2 120, 120 108C136.8 96, 151.2 120, 168 108" 
-    stroke="#dbeafe" 
-    stroke-width="6" 
-    fill="none"
-    stroke-linecap="round"
-  />
-  <path 
-    d="M48 132C64.8 120, 79.2 144, 96 132C112.8 120, 127.2 144, 144 132" 
-    stroke="#bfdbfe" 
-    stroke-width="5" 
+    stroke-width="4.8" 
     fill="none"
     stroke-linecap="round"
   />
   
-  <!-- Pipe/Plumbing Element -->
-  <rect x="84" y="36" width="10" height="60" fill="#f8fafc" rx="5"/>
-  <rect x="98" y="36" width="10" height="60" fill="#f8fafc" rx="5"/>
-  
-  <!-- Connection/Joint -->
-  <rect x="79" y="43" width="34" height="14" fill="#e2e8f0" rx="7"/>
-  <rect x="79" y="72" width="34" height="14" fill="#e2e8f0" rx="7"/>
-  
-  <!-- Drop/Water element -->
-  <path 
-    d="M96 48L103.2 36C103.2 31.2, 98.4 28.8, 96 28.8C93.6 28.8, 88.8 31.2, 88.8 36L96 48Z" 
-    fill="#3b82f6"
+  <!-- Small highlight droplet -->
+  <ellipse 
+    cx="102.4" 
+    cy="70.4" 
+    rx="6.4" 
+    ry="9.6" 
+    fill="#dbeafe"
+    opacity="0.8"
   />
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
 </svg>
