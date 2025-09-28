@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sitemap": "node ../sitemap-generator.js",
+    "build:sitemap": "npm run sitemap && npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
