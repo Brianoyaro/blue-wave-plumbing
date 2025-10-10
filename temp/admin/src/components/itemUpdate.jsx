@@ -143,7 +143,7 @@ const ItemUpdate = () => {
                 key={index}
                 src={src}
                 alt="Preview"
-                className="w-20 h-20 object-cover rounded-lg border"
+                className="w-20 h-20 object-contain bg-gray-50 rounded-lg border"
               />
             ))}
           </div>

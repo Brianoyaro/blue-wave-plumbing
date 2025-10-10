@@ -47,7 +47,7 @@ function ItemList() {
                     <img 
                       src={item.images?.[0] || "https://via.placeholder.com/400x300?text=No+Image"} 
                       alt={item.name} 
-                      className="w-full h-32 sm:h-48 md:h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-32 sm:h-48 md:h-60 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-2 right-2">
                       <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">
