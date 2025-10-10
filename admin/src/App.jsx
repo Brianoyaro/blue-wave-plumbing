@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/nav";
@@ -7,8 +7,23 @@ import ItemDetail from "./components/itemDetail";
 import ItemUpdate from "./components/itemUpdate";
 import ItemUpload from "./components/itemUpload";
 import CategoryPage from "./components/categoryPage";
+import ServerStatusIndicator from "./components/ServerStatusIndicator";
+
+// Import keep-alive service
+import keepAliveService from "./services/keepAliveService";
 
 function App() {
+  // Start keep-alive service when app loads
+  useEffect(() => {
+    // Start the keep-alive service
+    keepAliveService.start();
+
+    // Cleanup function to stop service when component unmounts
+    return () => {
+      keepAliveService.stop();
+    };
+  }, []);
+
   return (
     <Router>
       <div className="min-h-screen">
@@ -24,6 +39,9 @@ function App() {
             <Route path="/category/:category" element={<CategoryPage />} />
           </Routes>
         </main>
+
+        {/* Server Status Indicator for development/monitoring */}
+        <ServerStatusIndicator />
       </div>
     </Router>
   );
