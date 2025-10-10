@@ -46,11 +46,11 @@ function ItemDetail() {
         {/* Image Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {item.images?.map((img, idx) => (
-            <div key={idx} className="relative group overflow-hidden rounded-2xl shadow-lg">
+            <div key={idx} className="relative group overflow-hidden rounded-2xl shadow-lg bg-gray-50">
               <img
                 src={img}
                 alt={`${item.name}-${idx}`}
-                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-80 object-contain group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
