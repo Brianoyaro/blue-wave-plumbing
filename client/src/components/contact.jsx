@@ -4,7 +4,7 @@ const Contact = () => {
   const whatsappNumber = "254797965768";
   const whatsappMessage = "Hi, i would like to get a quote of the following items: ";
   const emailSubject = "Hi, i would like to get a quote of the following items: ";
-  // const shopLocation = "https://maps.google.com/maps?q=-1.3802033%2C36.7657133&z=17&hl=en";
+  // const shopLocation = "https://maps.google.com/maps?q=-1.390750%2C36.768917&z=17&hl=en";
   const shopLocation = "https://maps.app.goo.gl/fQGyW5o5K5NNBxEA8?g_st=aw";
 
   const handleWhatsAppClick = () => {
@@ -150,7 +150,7 @@ const Contact = () => {
             </div>
             <div className="h-96 lg:h-full min-h-[400px]">
               <iframe
-                src="https://maps.google.com/maps?q=-1.3802033%2C36.7657133&z=17&hl=en&output=embed"
+                src="https://maps.google.com/maps?q=-1.390750%2C36.768917&z=17&hl=en&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
