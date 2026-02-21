@@ -35,61 +35,61 @@ function Home() {
           Our Plumbing Materials Categories
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/PPR pipes & PPR fittings" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/ppr.jpeg" alt="PPR pipes & fittings" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">PPR Pipes & Fittings</h3>
               <p className="text-gray-600">High-quality PPR pipes and fittings for reliable plumbing installations in Kenya.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/GI pipes & GI fittings" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/gi.jpeg" alt="GI pipes & fittings" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">GI Pipes & Fittings</h3>
               <p className="text-gray-600">Galvanized iron pipes and fittings for durable and long-lasting plumbing solutions.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/HDPE pipes & HDPE fittings" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/hdpe.webp" alt="HDPE pipes & fittings" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">HDPE Pipes & Fittings</h3>
               <p className="text-gray-600">High-density polyethylene pipes and fittings for flexible, corrosion-resistant plumbing.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/gutters & accessories" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/gutter.jpeg" alt="Gutters & accessories" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Gutters & Accessories</h3>
               <p className="text-gray-600">Premium gutters and accessories for effective rainwater management systems.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/Toilet & Accessories" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/toilet.jpeg" alt="Toilets & Accessories" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Toilets & Accessories</h3>
               <p className="text-gray-600">Modern toilets and bathroom accessories for complete bathroom solutions.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/Waste pipes & Fittings" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/waste.jpeg" alt="Waste pipes & Fittings" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Waste Pipes & Fittings</h3>
               <p className="text-gray-600">Reliable waste pipes and drainage fittings for efficient waste management.</p>
             </div>
-          </div>
+          </Link>
           
-          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+          <Link to="/category/General Items" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
             <img src="/bluewaves/general.jpeg" alt="General plumbing Items" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">General Plumbing Items</h3>
               <p className="text-gray-600">Essential plumbing tools, valves, and accessories for all your plumbing needs.</p>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 

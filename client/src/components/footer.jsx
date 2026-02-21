@@ -28,11 +28,11 @@ function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-          <ul className="space-y-2 text-sm">
-            <li><span className="font-semibold">Location:</span> Rongai, Kenya</li>
-            <li><span className="font-semibold">Phone:</span> +254797965768</li>
-            <li><span className="font-semibold">Email:</span> bluewaveharsuppliers@gmail.com</li>
-          </ul>
+          <address className="not-italic space-y-2 text-sm">
+            <p><span className="font-semibold">Location:</span> Rongai, Kenya</p>
+            <p><span className="font-semibold">Phone:</span> <a href="tel:+254797965768" className="hover:text-blue-400">+254797965768</a></p>
+            <p><span className="font-semibold">Email:</span> <a href="mailto:bluewaveharsuppliers@gmail.com" className="hover:text-blue-400">bluewaveharsuppliers@gmail.com</a></p>
+          </address>
         </div>
 
         {/* Social Media */}

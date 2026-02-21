@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const whatsappNumber = "254797965768";
@@ -113,34 +114,34 @@ const Contact = () => {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h3 className="text-xl font-bold text-blue-900 mb-4">Our Products</h3>
               <div className="grid grid-cols-1 gap-3">
-                <div className="flex items-center space-x-2">
+                <Link to="/category/PPR pipes & PPR fittings" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">PPR Pipes & Fittings</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">PPR Pipes & Fittings</span>
+                </Link>
+                <Link to="/category/GI pipes & GI fittings" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">GI Pipes & Fittings</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">GI Pipes & Fittings</span>
+                </Link>
+                <Link to="/category/HDPE pipes & HDPE fittings" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">HDPE Pipes & Fittings</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">HDPE Pipes & Fittings</span>
+                </Link>
+                <Link to="/category/gutters & accessories" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Gutters & Accessories</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">Gutters & Accessories</span>
+                </Link>
+                <Link to="/category/Toilet & Accessories" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Toilets & Bathroom Accessories</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">Toilets & Bathroom Accessories</span>
+                </Link>
+                <Link to="/category/Waste pipes & Fittings" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Waste Pipes & Drainage</span>
-                </div>
-                <div className="flex items-center space-x-2">
+                  <span className="text-gray-700 hover:text-blue-600">Waste Pipes & Drainage</span>
+                </Link>
+                <Link to="/category/General Items" className="flex items-center space-x-2 hover:text-blue-600 transition-colors">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">General Plumbing Items</span>
-                </div>
+                  <span className="text-gray-700 hover:text-blue-600">General Plumbing Items</span>
+                </Link>
               </div>
             </div>
           </div>
