@@ -102,9 +102,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Business Hours</h3>
-                  <p className="text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p className="text-gray-600">Saturday: Closed</p>
-                  <p className="text-gray-600">Sunday: 8:00 AM - 5:00 PM</p>
+                  <p className="text-gray-600">Open 24 Hours</p>
+                  <p className="text-gray-600">7 Days a Week</p>
                 </div>
               </div>
             </div>
@@ -141,7 +140,7 @@ const Contact = () => {
             </div>
             <div className="h-96 lg:h-full min-h-[400px]">
               <iframe
-                src="https://maps.google.com/maps?q=-1.390750%2C36.768917&z=17&hl=en&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.643071712057!2d36.766356774965885!3d-1.3907100985961516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMjMnMjYuNiJTIDM2wrA0NicwOC4yIkU!5e0!3m2!1sen!2ske!4v1771665435046!5m2!1sen!2ske"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
