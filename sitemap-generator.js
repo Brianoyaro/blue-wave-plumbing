@@ -8,7 +8,8 @@ const currentDate = new Date().toISOString().split('T')[0];
 // Main categories based on your home page
 const categories = [
   'PPR pipes & fittings',
-  'GI pipes & fittings', 
+  'GI pipes & fittings',
+  'HDPE pipes & fittings',
   'gutters & accessories',
   'toilets & accessories',
   'waste pipes & Fittings',
@@ -22,6 +23,7 @@ const locations = ['rongai', 'nairobi', 'kenya'];
 const productKeywords = [
   'ppr pipes',
   'gi pipes',
+  'hdpe pipes',
   'gutters',
   'toilets',
   'waste pipes',

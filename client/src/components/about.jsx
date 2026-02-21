@@ -8,7 +8,7 @@ function About() {
 
       {/* Intro Paragraph */}
       <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-        Welcome to <span className="font-semibold text-blue-600">Bluewave Plumbers</span>, your trusted partner in providing high-quality plumbing materials across Nairobi. We specialize in PPR pipes & fittings, gutters & accessories, GI pipes & fittings, toilets & accessories, general plumbing items, and waste pipes & fittings. Our commitment is to offer reliable, affordable, and durable solutions for every plumbing project.
+        Welcome to <span className="font-semibold text-blue-600">Bluewave Plumbers</span>, your trusted partner in providing high-quality plumbing materials across Nairobi. We specialize in PPR pipes & fittings, GI pipes & fittings, HDPE pipes & fittings, gutters & accessories, toilets & accessories, general plumbing items, and waste pipes & fittings. Our commitment is to offer reliable, affordable, and durable solutions for every plumbing project.
       </p>
 
       {/* Mission & Values */}

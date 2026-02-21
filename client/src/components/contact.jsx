@@ -123,6 +123,10 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <span className="text-gray-700">HDPE Pipes & Fittings</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   <span className="text-gray-700">Gutters & Accessories</span>
                 </div>
                 <div className="flex items-center space-x-2">

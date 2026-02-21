@@ -122,8 +122,9 @@ const ItemUpdate = () => {
           >
             <option value="">-- Select Category --</option>
             <option value="PPR pipes & PPR fittings">PPR pipes & PPR fittings</option>
-            <option value="gutters & accessories">gutters & accessories</option>
             <option value="GI pipes & GI fittings">GI pipes & GI fittings</option>
+            <option value="HDPE pipes & HDPE fittings">HDPE pipes & HDPE fittings</option>
+            <option value="gutters & accessories">gutters & accessories</option>
             <option value="Toilet & Accessories">Toilet & Accessories</option>
             <option value="General Items">General Items</option>
             <option value="Waste pipes & Fittings">Waste pipes & Fittings</option>

@@ -22,6 +22,7 @@
 ### Product Categories (Priority 0.9)
 - PPR pipes & fittings
 - GI pipes & fittings
+- HDPE pipes & fittings
 - Gutters & accessories
 - Toilets & accessories
 - Waste pipes & fittings
@@ -35,6 +36,7 @@
 ### Keyword-Rich Search Pages (Priority 0.7)
 - PPR pipes search
 - GI pipes search
+- HDPE pipes search
 - Gutters search
 - Toilets search
 - Waste pipes search
@@ -129,6 +131,7 @@ Submit to Kenya business directories:
 - "plumbing materials Kenya"
 - "PPR pipes Rongai"
 - "GI pipes Nairobi"
+- "HDPE pipes Kenya"
 - "plumbing shop Rongai"
 - "toilets Kenya"
 - "gutters Nairobi"

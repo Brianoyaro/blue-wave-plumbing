@@ -11,7 +11,7 @@ function Home() {
           Bluewave Plumbers - Rongai, Nairobi
         </h1>
         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Your trusted source for quality plumbing materials in Rongai, Nairobi. We specialize in <span className="font-semibold text-blue-600">PPR pipes & fittings</span>, <span className="font-semibold text-blue-600">GI pipes & fittings</span>, <span className="font-semibold text-blue-600">gutters & accessories</span>, <span className="font-semibold text-blue-600">toilets & accessories</span>, and all plumbing supplies. Quality products at pocket-friendly prices!
+          Your trusted source for quality plumbing materials in Rongai, Nairobi. We specialize in <span className="font-semibold text-blue-600">PPR pipes & fittings</span>, <span className="font-semibold text-blue-600">GI pipes & fittings</span>, <span className="font-semibold text-blue-600">HDPE pipes & fittings</span>, <span className="font-semibold text-blue-600">gutters & accessories</span>, <span className="font-semibold text-blue-600">toilets & accessories</span>, and all plumbing supplies. Quality products at pocket-friendly prices!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
@@ -48,6 +48,14 @@ function Home() {
             <div className="p-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">GI Pipes & Fittings</h3>
               <p className="text-gray-600">Galvanized iron pipes and fittings for durable and long-lasting plumbing solutions.</p>
+            </div>
+          </div>
+          
+          <div className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white">
+            <img src="/bluewaves/hdpe.webp" alt="HDPE pipes & fittings" className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">HDPE Pipes & Fittings</h3>
+              <p className="text-gray-600">High-density polyethylene pipes and fittings for flexible, corrosion-resistant plumbing.</p>
             </div>
           </div>
           
