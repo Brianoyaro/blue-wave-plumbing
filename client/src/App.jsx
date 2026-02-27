@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import components
@@ -12,20 +12,7 @@ import ItemList from "./components/itemList";
 import CategoryPage from "./components/categoryPage";
 import WhatsAppButton from "./components/whatsappButton";
 
-// Import keep-alive service
-import keepAliveService from "./services/keepAliveService";
-
 function App() {
-  // Start keep-alive service when app loads
-  useEffect(() => {
-    // Start the keep-alive service
-    keepAliveService.start();
-
-    // Cleanup function to stop service when component unmounts
-    return () => {
-      keepAliveService.stop();
-    };
-  }, []);
 
   return (
     <Router>
