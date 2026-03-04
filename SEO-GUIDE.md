@@ -3,9 +3,12 @@
 ## 📁 Files Created for SEO
 
 ### ✅ Core SEO Files
-- `client/public/sitemap.xml` - XML sitemap with all important pages
+- `client/public/sitemap.xml` - Main sitemap with pages and categories
+- `client/public/products-sitemap.xml` - Dynamic products from database
+- `client/public/images-sitemap.xml` - Product images sitemap
+- `client/public/sitemap-index.xml` - Sitemap index file
 - `client/public/robots.txt` - Search engine crawler instructions
-- `sitemap-generator.js` - Dynamic sitemap generator script
+- `backend/sitemap-generator-advanced.js` - Advanced sitemap generator with database integration
 
 ### ✅ Updated Files
 - `client/index.html` - Added sitemap reference link
@@ -76,10 +79,17 @@ cd /home/brian/blue-wave-plumbing
 npm run sitemap
 ```
 
-### Build with Updated Sitemap
+### Sitemap Generation
+Sitemaps are automatically generated when the backend starts:
 ```bash
-cd /home/brian/blue-wave-plumbing/client
-npm run build:sitemap
+cd /home/brian/blue-wave-plumbing/backend
+npm start  # Generates all sitemaps, then starts server
+```
+
+To manually regenerate sitemaps:
+```bash
+cd /home/brian/blue-wave-plumbing/backend
+npm run sitemap
 ```
 
 ## 📈 Additional SEO Improvements Made
