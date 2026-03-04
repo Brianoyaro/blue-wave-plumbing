@@ -1,10 +1,15 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://bluewaveplumbing.com/sitemap.xml
+# Primary Sitemap Index (contains all sitemaps)
+Sitemap: https://bluewaveplumbing.com/sitemap-index.xml
 
-# Block admin areas (if you have any)
+# Individual Sitemaps (also accessible directly)
+Sitemap: https://bluewaveplumbing.com/sitemap.xml
+Sitemap: https://bluewaveplumbing.com/products-sitemap.xml
+Sitemap: https://bluewaveplumbing.com/images-sitemap.xml
+
+# Block admin areas and backend API
 Disallow: /admin/
 Disallow: /api/
 
@@ -14,9 +19,11 @@ Allow: /favicon.svg
 Allow: /icon-192.svg
 Allow: /manifest.json
 
-# Crawl delay (optional - helps with server load)
+# Allow all product and category pages
+Allow: /items/
+Allow: /category/
+
+# Crawl delay (helps with server load)
 Crawl-delay: 1
 
-# Additional sitemaps (if you add more later)
-# Sitemap: https://bluewaveplumbing.com/products-sitemap.xml
-# Sitemap: https://bluewaveplumbing.com/categories-sitemap.xml
+# Last updated: 2026-03-04
