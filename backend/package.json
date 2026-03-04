@@ -6,8 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node sitemap-generator-advanced.js && node server.js",
-    "sitemap": "node sitemap-generator-advanced.js",
-    "sitemap:old": "node ../sitemap-generator.js"
+    "sitemap": "node sitemap-generator-advanced.js"
   },
   "keywords": [],
   "author": "",
