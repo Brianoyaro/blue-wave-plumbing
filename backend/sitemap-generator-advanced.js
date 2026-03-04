@@ -4,7 +4,7 @@ const path = require('path');
 require('dotenv').config();
 
 // Configuration
-const DOMAIN = 'https://bluewavesplumbing.com';
+const DOMAIN = 'https://bluewaveplumbing.com';
 const MONGODB_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/bluewaveplumbing';
 const currentDate = new Date().toISOString().split('T')[0];
 
