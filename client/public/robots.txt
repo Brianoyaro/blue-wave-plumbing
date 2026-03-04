@@ -2,12 +2,12 @@ User-agent: *
 Allow: /
 
 # Primary Sitemap Index (contains all sitemaps)
-Sitemap: https://bluewaveplumbing.com/sitemap-index.xml
+Sitemap: https://bluewavesplumbing.com/sitemap-index.xml
 
 # Individual Sitemaps (also accessible directly)
-Sitemap: https://bluewaveplumbing.com/sitemap.xml
-Sitemap: https://bluewaveplumbing.com/products-sitemap.xml
-Sitemap: https://bluewaveplumbing.com/images-sitemap.xml
+Sitemap: https://bluewavesplumbing.com/sitemap.xml
+Sitemap: https://bluewavesplumbing.com/products-sitemap.xml
+Sitemap: https://bluewavesplumbing.com/images-sitemap.xml
 
 # Block admin areas and backend API
 Disallow: /admin/
