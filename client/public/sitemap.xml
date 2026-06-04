@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://bluewavesplumbing.com/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,622 +15,1654 @@
   <!-- Main Pages -->
   <url>
     <loc>https://bluewavesplumbing.com/home</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://bluewavesplumbing.com/about</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://bluewavesplumbing.com/contact</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://bluewavesplumbing.com/category/PPR%20pipes%20%26%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/GI%20pipes%20%26%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/HDPE%20pipes%20%26%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/gutters%20%26%20accessories</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/toilets%20%26%20accessories</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/waste%20pipes%20%26%20Fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/category/general%20plumbing%20Items</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>  
   <url>
+    <loc>https://bluewavesplumbing.com/category/modern%20taps%20and%20sinks</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kiserian</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Near Me</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Siaya</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Karen</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Bondo</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Samburu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=East Leigh</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Suna West</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Suna East</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Thika</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Ruiru</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kayole</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=South B</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kikuyu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kitisuru</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Killimani</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Lavington</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Galeria</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Westland</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Muthaiga</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=CBD</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Two Rivers</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Makueni</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Machakos</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kabiria</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Ngong</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Ngong Road</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kajiado</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Dagoreti</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Ugunja</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Mombasa</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Lodwar</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Lower Kabete</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Garisa</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kasarani</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Yaya Centre</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Hardware Near Me</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Uyoma</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Ndori</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kisumu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Thika Road</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Uthiru</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Chelinge</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Town</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Busia</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kericho</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Nandi</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kwale</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Marsabit</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Isiolo</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Meru</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Tharaka Nithi</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Embu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Makueni</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Nyeri</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Nyandarua</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Murang'a</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kiambu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Turkana</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Mlolongo</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Industrial Area</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kasarani</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=West Pokot</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Trans-Nzoia</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Elgeyo Marakwet</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Nandi</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Baringo</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Laikipia</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Narok</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Bomet</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kakamega</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kakuma</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Vihiga</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Bungoma</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Homa Bay</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Migori</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Tana River</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Lamu</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?location=Kilifi</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>  
+  <url>
     <loc>https://bluewavesplumbing.com/?location=rongai</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=nairobi</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kenya</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kajiado</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=ngong</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=karen</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=langata</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kibera</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kawangware</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=dagoretti</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kikuyu</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=limuru</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kiambu</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=ruiru</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=thika</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=machakos</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kitengela</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=machakos</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kitengela</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=athiriver</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=mavoko</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=syokimau</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=mombasa</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kisumu</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=nakuru</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=eldoret</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=thika</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=garissa</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=meru</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=nakuru</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kisii</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=nyeri</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=embu</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=machakos</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kitui</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=marsabit</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=turkana</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=wajir</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=mandera</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=samburu</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=isiolo</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=laikipia</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=baringo</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=west pokot</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=East african cities</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kenyan towns</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?location=kenyan suburbs</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=ppr%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=gi%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=hdpe%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=pvc%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=waste%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=water%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=sewer%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=drainage%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=irrigation%20pipes</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=pipe%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=ppr%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=gi%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=elbow%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=tee%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=reducer%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=coupling%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=union%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=gutters</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=toilets</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=water%20closets</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=cisterns</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=bidets</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=sinks</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=basins</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=taps</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=faucets</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=showers</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=mixers</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=plumbing%20accessories</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=bathroom%20accessories</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=toilet%20accessories</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=shower%20heads</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=towel%20rails</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=soap%20dispensers</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=tissue%20holders</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=plumbing%20materials</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=plumbing%20supplies</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=plumbing%20hardware</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=bathroom%20fittings</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=sanitary%20ware</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=water%20fixtures</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=plumbing%20installation</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=pipe%20fitting%20services</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=bathroom%20installation</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=water%20connection</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>  
   <url>
     <loc>https://bluewavesplumbing.com/?search=sewage%20connection</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=waste%20pipe%204%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20pipe%20%C2%BE%C3%97100m%20roll</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=man%20hole%20covers</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=mixer%20pillar%20tap</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=lirlee%20wall%20tap%20long</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=kitchen%20tap%20long%20neck</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=corner%20gutter%20140mm</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=cistern%20ballvalve</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=floor%20trap%204%20way</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=floor%20trap%201%20way</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=waste%20bends%201%C2%BC%2C%201%C2%BD%2C2%2C%203%2C%204</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hacksaw%20blade</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=kent%20plastic%20water%20meter</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pump%20controller</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=aluminium%20shower%20head</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=aluminium%20shower%20head</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=vent%20cowl%204%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=gate%20valves</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pan%20connector%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=big%20wash%20hand%20basin%20with%20stand.</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=medium%20and%20small%20hand%20wash%20basin</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=close%20couple%20toilet%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=close%20couple%20toilet%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=arabic%20shower%20flex</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=flash%20handle</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=toilet%20seat%20cover</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=flexible%20tubes</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=tissue%20holder</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=gutter%20outlet%2Fdropper</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=gutter%20end</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=inspection%20tee%204%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=metallic%20soap%20dish</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=metallic%20super%20water%20meter</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=18ply%20manilla%20for%20construction%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=asian%20stepping%20toilet</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pvc%20gutter</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=washing%20machine%20tap</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ball%20valve</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=down%20pipe%203</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=booster%20water%20pump</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pliers</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pliers</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=tape%20measure%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=tape%20measure%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=tank%20connector%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=fly%20globe%20locks</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pipe%20wrench</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20male%20adaptor</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20male%20tee%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20female%20tee</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20female%20elbow</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20male%20female%20%20elbow%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20male%20tee</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20pipes%20%C2%BE%22%20to%204%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=pillar%20tap%20long%20neck</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20pipe%20roll%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%20%C3%97100m</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=square%20kitchen%20sink</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20male%20adapter%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=automatic%20pop%20up%20waste%20%C2%BD%20%26%C2%BC</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=waste%20bend</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=non%20return%20valve%20%C2%BD%2C%C2%BE%2C1%22%2C1%C2%BC%2C1%C2%BD%2C2%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=gate%20valve</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=gate%20valves%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=4%20way%20shower%20complete</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=towel%20holder</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=double%20kitchen%20sink%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=kitchen%20sink%20s%2Fs</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=kitchen%20sink</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20coupler%20%C2%BE%22%2C1%22%2C1%C2%BC%22%2C1%C2%BD%22%2C2%22%2C3%22%2C4%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20tee%20%C2%BD%22%2C%20%C2%BE%22%2C1%22%2C1%C2%BC%22%2C%201%C2%BD%22%2C%202%22%2C3%22%2C%20%204%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=shower%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20male%20elbow%20%C2%BD%22%2C%20%C2%BE%2C%201%22%2C%201%C2%BC%22%2C1%C2%BD%22%2C%202%22%2C%203%22%2C4%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20union%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%2C1%C2%BC%22%2C1%C2%BD%22%202%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20male%20tee%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%2C%201%C2%BC%22%2C%201%C2%BD%22%2C%202%22%2C%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20female%20adaptors%2Fsockets</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20over%20bend%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20plain%20elbow%20%C2%BD%22%2C%C2%BE%22%2C%201%22%2C%201%C2%BC%22%2C%201%C2%BD%22%2C%202%22%20and%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20plain%20tee%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%2C%201%C2%BC%22%2C%201%C2%BD%22%2C%202%22%20and%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20male%20adaptor%2Fsocket%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%2C1%C2%BC%22%2C%201%C2%BD%22%2C%202%22%20and%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20female%20socket%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%201%C2%BC%22%2C%201%C2%BD%22%2C%202%22%20and%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=ppr%20plain%20socket%20%C2%BD%22%2C%20%C2%BE%22%2C%201%22%2C%201%C2%BC%22%2C%201%C2%BD%22%2C%202%22%20and%203%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=heavy%20duty%20waste%20pipes%206%22%20%268%22</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=conta%20adhesive%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=top%20flash%20cistern</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=flexible%20pillar%20tap%20long%20neck</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=arabic%20shower</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=4t%20instant%20shower</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=arabic%20shower%20flex</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=top%20flash%20cistern%20fittings</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=top%20flash%20cistern%20fittings</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=instant%20shower%20</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>  
+  <url>
+    <loc>https://bluewavesplumbing.com/?search=hdpe%20fittings%20</loc>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
