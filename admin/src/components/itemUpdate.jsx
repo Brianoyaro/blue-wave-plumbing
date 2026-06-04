@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import imageCompression from "browser-image-compression";
+import { toast } from "react-toastify";
 
 const ItemUpdate = () => {
   const { id } = useParams();
@@ -92,7 +93,10 @@ const ItemUpdate = () => {
       console.log("✅ [FILE SELECT] Compression complete and previews ready");
     } catch (error) {
       console.error("Error during image compression:", error);
-      alert("Error processing images. Please try again.");
+      toast.error("⚠️ Error processing images. Please try again.", {
+        position: "top-right",
+        autoClose: 4000,
+      });
     } finally {
       setIsCompressing(false);
     }
@@ -134,7 +138,10 @@ const ItemUpdate = () => {
         timeout: 30000,
       });
       console.log("✅ [UPDATE] Success! Item updated");
-      alert("Item updated successfully!");
+      toast.success("✨ Item updated successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
       navigate("/");
     } catch (error) {
       console.error("❌ [UPDATE] Error occurred!");
@@ -158,7 +165,10 @@ const ItemUpdate = () => {
       }
       
       console.error("🔍 [DEBUG] Full error object:", error);
-      alert("Failed to update item. Check browser console for details.");
+      toast.error("❌ Failed to update item. Check browser console for details.", {
+        position: "top-right",
+        autoClose: 5000,
+      });
     }
   };
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import imageCompression from "browser-image-compression";
+import { toast } from "react-toastify";
 
 const UploadForm = () => {
   const [formData, setFormData] = useState({
@@ -71,7 +72,10 @@ const UploadForm = () => {
       console.log("✅ [FILE SELECT] Compression complete and previews ready");
     } catch (error) {
       console.error("Error during image compression:", error);
-      alert("Error processing images. Please try again.");
+      toast.error("⚠️ Error processing images. Please try again.", {
+        position: "top-right",
+        autoClose: 4000,
+      });
     } finally {
       setIsCompressing(false);
     }
@@ -112,7 +116,10 @@ const UploadForm = () => {
         timeout: 30000,
       });
       console.log("✅ [UPLOAD] Success! Response:", response.data);
-      alert("Item uploaded successfully!");
+      toast.success("✨ Item uploaded successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
       setFormData({
         name: "",
         description: "",
@@ -144,7 +151,10 @@ const UploadForm = () => {
       console.error("🔍 [DEBUG] Full error object:", error);
 
       const errorMessage = error.response?.data?.error || error.message || "Failed to upload item";
-      alert(`Failed to upload item: ${errorMessage}\n\nCheck browser console for details.`);
+      toast.error(`❌ Upload failed: ${errorMessage}`, {
+        position: "top-right",
+        autoClose: 5000,
+      });
     }
   };
 
