@@ -173,50 +173,58 @@ const ItemUpdate = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-6 sm:py-8 px-4 sm:px-6">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-white p-8 rounded-2xl shadow-lg"
+        className="w-full max-w-2xl mx-auto bg-white p-5 sm:p-8 rounded-2xl shadow-lg"
       >
-        <h2 className="text-2xl font-bold text-center mb-6 text-blue-700">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 text-blue-700">
           Update Item
         </h2>
 
         {/* Item Name */}
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">Item Name</label>
+        <div className="mb-5 sm:mb-6">
+          <label className="block text-gray-700 font-semibold text-sm sm:text-base mb-2">
+            Item Name *
+          </label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            placeholder="Enter item name"
+            className="w-full px-4 py-3 sm:py-4 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none transition"
           />
         </div>
 
         {/* Description */}
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">Description</label>
+        <div className="mb-5 sm:mb-6">
+          <label className="block text-gray-700 font-semibold text-sm sm:text-base mb-2">
+            Description *
+          </label>
           <textarea
             name="description"
             value={formData.description}
             onChange={handleChange}
             required
-            rows="3"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            placeholder="Enter item description"
+            rows="4"
+            className="w-full px-4 py-3 sm:py-4 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none transition resize-none"
           ></textarea>
         </div>
 
         {/* Category */}
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">Category</label>
+        <div className="mb-5 sm:mb-6">
+          <label className="block text-gray-700 font-semibold text-sm sm:text-base mb-2">
+            Category *
+          </label>
           <select
             name="category"
             value={formData.category}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none"
+            className="w-full px-4 py-3 sm:py-4 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none transition bg-white"
           >
             <option value="">-- Select Category --</option>
             <option value="PPR pipes & PPR fittings">PPR pipes & PPR fittings</option>
@@ -231,39 +239,96 @@ const ItemUpdate = () => {
         </div>
 
         {/* Upload Images */}
-        <div className="mb-4">
-          <label className="block text-gray-700 font-medium mb-2">
-            Upload New Images {isCompressing && <span className="text-blue-600 text-sm">(Compressing...)</span>}
+        <div className="mb-5 sm:mb-6">
+          <label className="block text-gray-700 font-semibold text-sm sm:text-base mb-2">
+            Upload New Images
+            {isCompressing && (
+              <span className="text-blue-600 text-xs sm:text-sm font-normal ml-2">
+                (Compressing...)
+              </span>
+            )}
           </label>
+          <p className="text-xs sm:text-sm text-gray-600 mb-3">
+            Leave blank to keep existing images
+          </p>
           <input
             type="file"
             name="images"
             multiple
             onChange={handleFileChange}
             disabled={isCompressing}
-            className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
+            accept="image/*"
+            className="w-full px-4 py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent outline-none transition disabled:opacity-50 disabled:cursor-not-allowed file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
           />
-          {isCompressing && <p className="text-blue-600 text-sm mt-2">📦 Processing and compressing images...</p>}
-          <div className="flex gap-3 mt-3 flex-wrap">
-            {previewImages.map((src, index) => (
-              <img
-                key={index}
-                src={src}
-                alt="Preview"
-                className="w-20 h-20 object-contain bg-gray-50 rounded-lg border"
-              />
-            ))}
-          </div>
+          {isCompressing && (
+            <p className="text-blue-600 text-xs sm:text-sm mt-2 flex items-center">
+              <svg className="w-4 h-4 mr-1 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Processing and compressing images...
+            </p>
+          )}
+          
+          {/* Image Previews */}
+          {previewImages.length > 0 && (
+            <div className="mt-4">
+              <p className="text-sm text-gray-600 mb-3">Current/Preview ({previewImages.length} image{previewImages.length !== 1 ? 's' : ''}):</p>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3">
+                {previewImages.map((src, index) => (
+                  <div
+                    key={index}
+                    className="relative group"
+                  >
+                    <img
+                      src={src}
+                      alt={`Preview ${index + 1}`}
+                      className="w-full aspect-square object-contain bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-400 transition"
+                    />
+                    <div className="text-xs text-gray-500 text-center mt-1 group-hover:text-gray-700">
+                      #{index + 1}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* Submit Button */}
-        <button
-          type="submit"
-          disabled={isCompressing}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {isCompressing ? "Processing Images..." : "Update Item"}
-        </button>
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <button
+            type="submit"
+            disabled={isCompressing}
+            className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 text-base sm:text-lg flex items-center justify-center"
+          >
+            {isCompressing ? (
+              <>
+                <svg className="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Processing...
+              </>
+            ) : (
+              <>
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                Update Item
+              </>
+            )}
+          </button>
+          
+          <button
+            type="button"
+            onClick={() => navigate("/")}
+            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition text-base sm:text-lg flex items-center justify-center"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            Cancel
+          </button>
+        </div>
       </form>
     </div>
   );
