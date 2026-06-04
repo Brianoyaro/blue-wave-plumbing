@@ -16,7 +16,8 @@ const categories = [
   'gutters & accessories',
   'toilets & accessories',
   'waste pipes & Fittings',
-  'general plumbing Items'
+  'general plumbing Items',
+  'modern taps and sinks'
 ];
 
 // Enhanced location-based keywords for comprehensive local SEO

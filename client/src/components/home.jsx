@@ -90,6 +90,14 @@ function Home() {
               <p className="text-gray-600">Essential plumbing tools, valves, and accessories for all your plumbing needs.</p>
             </div>
           </Link>
+          
+          <Link to="/category/modern taps and sinks" className="rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden bg-white cursor-pointer">
+            <img src="/bluewaves/taps-sinks.jpeg" alt="modern taps and sinks" className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">Modern Taps & Sinks</h3>
+              <p className="text-gray-600">Contemporary taps and sinks for modern bathrooms and kitchens with premium finishes.</p>
+            </div>
+          </Link>
         </div>
       </section>
 

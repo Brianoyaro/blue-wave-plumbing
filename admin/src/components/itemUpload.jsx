@@ -118,6 +118,7 @@ const UploadForm = () => {
             <option value="HDPE pipes & HDPE fittings">HDPE pipes & HDPE fittings</option>
             <option value="gutters & accessories">gutters & accessories</option>
             <option value="Toilet & Accessories">Toilet & Accessories</option>
+            <option value="modern taps and sinks">modern taps and sinks</option>
             <option value="General Items">General Items</option>
             <option value="Waste pipes & Fittings">Waste pipes & Fittings</option>
           </select>
