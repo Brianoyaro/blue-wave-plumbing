@@ -49,23 +49,37 @@ const ItemUpdate = () => {
       useWebWorker: true
     };
 
+    console.log("🔧 [COMPRESSION] Starting image compression...");
+    console.log(`📦 [COMPRESSION] Input: ${files.length} files, ${(files.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024).toFixed(2)}MB total`);
+
     const compressedFiles = [];
     for (let file of files) {
       try {
+        const originalSize = file.size / 1024 / 1024;
         const compressed = await imageCompression(file, options);
+        const compressedSize = compressed.size / 1024 / 1024;
+        const ratio = ((1 - compressedSize / originalSize) * 100).toFixed(1);
+        
         compressedFiles.push(compressed);
-        console.log(`📦 Compressed ${file.name}: ${(file.size / 1024 / 1024).toFixed(2)}MB → ${(compressed.size / 1024 / 1024).toFixed(2)}MB`);
+        console.log(`✅ [COMPRESSION] ${file.name}: ${originalSize.toFixed(2)}MB → ${compressedSize.toFixed(2)}MB (${ratio}% reduction)`);
       } catch (error) {
-        console.error(`Failed to compress ${file.name}:`, error);
+        console.error(`❌ [COMPRESSION] Failed to compress ${file.name}:`, error);
         compressedFiles.push(file); // fallback to original
       }
     }
+    
+    const totalCompressed = compressedFiles.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024;
+    console.log(`✨ [COMPRESSION] Complete! Output: ${compressedFiles.length} files, ${totalCompressed.toFixed(2)}MB total`);
     return compressedFiles;
   };
 
   // Handle file input
   const handleFileChange = async (e) => {
     const files = Array.from(e.target.files);
+    console.log(`📂 [FILE SELECT] ${files.length} file(s) selected`);
+    console.log(`📊 [FILE SELECT] Total size: ${(files.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024).toFixed(2)}MB`);
+    files.forEach(f => console.log(`  - ${f.name}: ${(f.size / 1024 / 1024).toFixed(2)}MB (${f.type})`));
+    
     setIsCompressing(true);
 
     try {
@@ -75,6 +89,7 @@ const ItemUpdate = () => {
       // Preview new images
       const previews = compressedFiles.map((file) => URL.createObjectURL(file));
       setPreviewImages(previews);
+      console.log("✅ [FILE SELECT] Compression complete and previews ready");
     } catch (error) {
       console.error("Error during image compression:", error);
       alert("Error processing images. Please try again.");
@@ -87,24 +102,63 @@ const ItemUpdate = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("🚀 [UPDATE] Starting item update...");
+    console.log("📝 [UPDATE] Item ID:", id);
+    console.log("📝 [UPDATE] Form data:", {
+      name: formData.name,
+      category: formData.category,
+      imageCount: formData.images.length,
+      imageSize: formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024
+    });
+
     const data = new FormData();
     Object.keys(formData).forEach((key) => {
       if (key === "images") {
-        formData.images.forEach((file) => data.append("images", file));
+        formData.images.forEach((file) => {
+          data.append("images", file);
+          console.log(`📦 [UPDATE] Appending image: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`);
+        });
       } else {
         data.append(key, formData[key]);
       }
     });
 
+    console.log(`📊 [UPDATE] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
+    console.log(`🌐 [UPDATE] Backend URL: ${backendURL}/${id}`);
+    console.log("🔌 [UPDATE] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+
     try {
+      console.log("📤 [UPDATE] Sending PUT request to backend...");
       await axios.put(`${backendURL}/${id}`, data, {
         headers: { "Content-Type": "multipart/form-data" },
+        timeout: 30000,
       });
+      console.log("✅ [UPDATE] Success! Item updated");
       alert("Item updated successfully!");
-      navigate("/"); // redirect after update
+      navigate("/");
     } catch (error) {
-      console.error(error);
-      alert("Failed to update item");
+      console.error("❌ [UPDATE] Error occurred!");
+      console.error("📍 [ERROR] Error type:", error.name);
+      console.error("💬 [ERROR] Message:", error.message);
+      console.error("🔧 [ERROR] Code:", error.code);
+      
+      if (error.response) {
+        // Server responded with error status
+        console.error("🚨 [RESPONSE] Status:", error.response.status);
+        console.error("🚨 [RESPONSE] Headers:", error.response.headers);
+        console.error("🚨 [RESPONSE] Data:", error.response.data);
+      } else if (error.request) {
+        // Request made but no response
+        console.error("📡 [REQUEST] No response received");
+        console.error("📡 [REQUEST] Status:", error.request.status);
+        console.error("📡 [REQUEST] Status text:", error.request.statusText);
+        console.error("📡 [REQUEST] Response text:", error.request.responseText);
+      } else {
+        console.error("⚙️ [SETUP] Error in request setup:", error);
+      }
+      
+      console.error("🔍 [DEBUG] Full error object:", error);
+      alert("Failed to update item. Check browser console for details.");
     }
   };
 

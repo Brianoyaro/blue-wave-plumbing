@@ -28,23 +28,37 @@ const UploadForm = () => {
       useWebWorker: true
     };
 
+    console.log("🔧 [COMPRESSION] Starting image compression...");
+    console.log(`📦 [COMPRESSION] Input: ${files.length} files, ${(files.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024).toFixed(2)}MB total`);
+
     const compressedFiles = [];
     for (let file of files) {
       try {
+        const originalSize = file.size / 1024 / 1024;
         const compressed = await imageCompression(file, options);
+        const compressedSize = compressed.size / 1024 / 1024;
+        const ratio = ((1 - compressedSize / originalSize) * 100).toFixed(1);
+        
         compressedFiles.push(compressed);
-        console.log(`📦 Compressed ${file.name}: ${(file.size / 1024 / 1024).toFixed(2)}MB → ${(compressed.size / 1024 / 1024).toFixed(2)}MB`);
+        console.log(`✅ [COMPRESSION] ${file.name}: ${originalSize.toFixed(2)}MB → ${compressedSize.toFixed(2)}MB (${ratio}% reduction)`);
       } catch (error) {
-        console.error(`Failed to compress ${file.name}:`, error);
+        console.error(`❌ [COMPRESSION] Failed to compress ${file.name}:`, error);
         compressedFiles.push(file); // fallback to original
       }
     }
+    
+    const totalCompressed = compressedFiles.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024;
+    console.log(`✨ [COMPRESSION] Complete! Output: ${compressedFiles.length} files, ${totalCompressed.toFixed(2)}MB total`);
     return compressedFiles;
   };
 
   // Handle file input
   const handleFileChange = async (e) => {
     const files = Array.from(e.target.files);
+    console.log(`📂 [FILE SELECT] ${files.length} file(s) selected`);
+    console.log(`📊 [FILE SELECT] Total size: ${(files.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024).toFixed(2)}MB`);
+    files.forEach(f => console.log(`  - ${f.name}: ${(f.size / 1024 / 1024).toFixed(2)}MB (${f.type})`));
+    
     setIsCompressing(true);
 
     try {
@@ -54,6 +68,7 @@ const UploadForm = () => {
       // Preview
       const previews = compressedFiles.map((file) => URL.createObjectURL(file));
       setPreviewImages(previews);
+      console.log("✅ [FILE SELECT] Compression complete and previews ready");
     } catch (error) {
       console.error("Error during image compression:", error);
       alert("Error processing images. Please try again.");
@@ -66,19 +81,37 @@ const UploadForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("🚀 [UPLOAD] Starting item upload...");
+    console.log("📝 [UPLOAD] Form data:", {
+      name: formData.name,
+      category: formData.category,
+      imageCount: formData.images.length,
+      imageSize: formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024
+    });
+
     const data = new FormData();
     Object.keys(formData).forEach((key) => {
       if (key === "images") {
-        formData.images.forEach((file) => data.append("images", file));
+        formData.images.forEach((file) => {
+          data.append("images", file);
+          console.log(`📦 [UPLOAD] Appending image: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`);
+        });
       } else {
         data.append(key, formData[key]);
       }
     });
 
+    console.log(`📊 [UPLOAD] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
+    console.log(`🌐 [UPLOAD] Backend URL: ${backendURL}`);
+    console.log("🔌 [UPLOAD] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+
     try {
+      console.log("📤 [UPLOAD] Sending request to backend...");
       const response = await axios.post(`${backendURL}`, data, {
         headers: { "Content-Type": "multipart/form-data" },
+        timeout: 30000,
       });
+      console.log("✅ [UPLOAD] Success! Response:", response.data);
       alert("Item uploaded successfully!");
       setFormData({
         name: "",
@@ -88,9 +121,30 @@ const UploadForm = () => {
       });
       setPreviewImages([]);
     } catch (error) {
-      console.error("Upload error:", error);
+      console.error("❌ [UPLOAD] Error occurred!");
+      console.error("📍 [ERROR] Error type:", error.name);
+      console.error("💬 [ERROR] Message:", error.message);
+      console.error("🔧 [ERROR] Code:", error.code);
+      
+      if (error.response) {
+        // Server responded with error status
+        console.error("🚨 [RESPONSE] Status:", error.response.status);
+        console.error("🚨 [RESPONSE] Headers:", error.response.headers);
+        console.error("🚨 [RESPONSE] Data:", error.response.data);
+      } else if (error.request) {
+        // Request made but no response
+        console.error("📡 [REQUEST] No response received");
+        console.error("📡 [REQUEST] Status:", error.request.status);
+        console.error("📡 [REQUEST] Status text:", error.request.statusText);
+        console.error("📡 [REQUEST] Response text:", error.request.responseText);
+      } else {
+        console.error("⚙️ [SETUP] Error in request setup:", error);
+      }
+      
+      console.error("🔍 [DEBUG] Full error object:", error);
+
       const errorMessage = error.response?.data?.error || error.message || "Failed to upload item";
-      alert(`Failed to upload item: ${errorMessage}`);
+      alert(`Failed to upload item: ${errorMessage}\n\nCheck browser console for details.`);
     }
   };
 
