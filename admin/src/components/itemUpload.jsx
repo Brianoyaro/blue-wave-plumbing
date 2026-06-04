@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import imageCompression from "browser-image-compression";
 
 const UploadForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const UploadForm = () => {
   });
 
   const [previewImages, setPreviewImages] = useState([]);
+  const [isCompressing, setIsCompressing] = useState(false);
   const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Handle input change
@@ -18,14 +20,46 @@ const UploadForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle file input
-  const handleFileChange = (e) => {
-    const files = Array.from(e.target.files);
-    setFormData({ ...formData, images: files });
+  // Compress images before upload
+  const compressImages = async (files) => {
+    const options = {
+      maxSizeMB: 1,
+      maxWidthOrHeight: 1920,
+      useWebWorker: true
+    };
 
-    // Preview
-    const previews = files.map((file) => URL.createObjectURL(file));
-    setPreviewImages(previews);
+    const compressedFiles = [];
+    for (let file of files) {
+      try {
+        const compressed = await imageCompression(file, options);
+        compressedFiles.push(compressed);
+        console.log(`📦 Compressed ${file.name}: ${(file.size / 1024 / 1024).toFixed(2)}MB → ${(compressed.size / 1024 / 1024).toFixed(2)}MB`);
+      } catch (error) {
+        console.error(`Failed to compress ${file.name}:`, error);
+        compressedFiles.push(file); // fallback to original
+      }
+    }
+    return compressedFiles;
+  };
+
+  // Handle file input
+  const handleFileChange = async (e) => {
+    const files = Array.from(e.target.files);
+    setIsCompressing(true);
+
+    try {
+      const compressedFiles = await compressImages(files);
+      setFormData({ ...formData, images: compressedFiles });
+
+      // Preview
+      const previews = compressedFiles.map((file) => URL.createObjectURL(file));
+      setPreviewImages(previews);
+    } catch (error) {
+      console.error("Error during image compression:", error);
+      alert("Error processing images. Please try again.");
+    } finally {
+      setIsCompressing(false);
+    }
   };
 
   // Submit form
@@ -127,7 +161,7 @@ const UploadForm = () => {
         {/* Upload Images */}
         <div className="mb-4">
           <label className="block text-gray-700 font-medium mb-2">
-            Upload Images
+            Upload Images {isCompressing && <span className="text-blue-600 text-sm">(Compressing...)</span>}
           </label>
           <input
             type="file"
@@ -135,8 +169,10 @@ const UploadForm = () => {
             multiple
             required
             onChange={handleFileChange}
-            className="w-full"
+            disabled={isCompressing}
+            className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
           />
+          {isCompressing && <p className="text-blue-600 text-sm mt-2">📦 Processing and compressing images...</p>}
           <div className="flex gap-3 mt-3 flex-wrap">
             {previewImages.map((src, index) => (
               <img
@@ -152,9 +188,10 @@ const UploadForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition"
+          disabled={isCompressing}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          Upload Item
+          {isCompressing ? "Processing Images..." : "Upload Item"}
         </button>
       </form>
     </div>
