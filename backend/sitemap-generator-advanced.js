@@ -22,7 +22,7 @@ const categories = [
 
 // Enhanced location-based keywords for comprehensive local SEO
 const locations = [
-  'rongai', 'nairobi', 'kenya', 'kajiado', 'ngong', 'karen', 
+  'Kiserian', 'Near Me', 'Siaya', 'Karen', 'Bondo', 'Samburu', 'East Leigh', 'Suna West', 'Suna East', 'Thika', 'Ruiru', 'Kayole', 'South B', 'Kikuyu', 'Kitisuru', 'Killimani', 'Lavington',  'Galeria', 'Westland', 'Muthaiga','CBD', 'Two Rivers', 'Makueni', 'Machakos', 'Kabiria', 'Ngong', 'Ngong Road', 'Kajiado', 'Dagoreti', 'Ugunja', 'Mombasa', 'Lodwar', 'Lower Kabete', 'Garisa', 'Kasarani', 'Yaya Centre', 'Hardware Near Me', 'Uyoma', 'Ndori', 'Kisumu', 'Thika Road', 'Uthiru', 'Chelinge', 'Town', 'Busia', 'Kericho', 'Nandi', 'Kwale', 'Marsabit', 'Isiolo', 'Meru', 'Tharaka Nithi', 'Embu', 'Makueni', 'Nyeri', 'Nyandarua', "Murang'a", 'Kiambu', 'Turkana', 'Mlolongo', 'Industrial Area', 'Kasarani', 'West Pokot', 'Trans-Nzoia', 'Elgeyo Marakwet', 'Nandi', 'Baringo', 'Laikipia', 'Narok', 'Bomet', 'Kakamega', 'Kakuma', 'Vihiga', 'Bungoma', 'Homa Bay', 'Migori', 'Tana River', 'Lamu', 'Kilifi', 'rongai', 'nairobi', 'kenya', 'kajiado', 'ngong', 'karen', 
   'langata', 'kibera', 'kawangware', 'dagoretti', 'kikuyu',
   'limuru', 'kiambu', 'ruiru', 'thika', 'machakos', 'kitengela',
   'machakos', 'kitengela', 'athiriver', 'mavoko', 'syokimau', 'mombasa', 'kisumu', 'nakuru', 'eldoret', 'thika', 'garissa',
@@ -227,6 +227,23 @@ async function generateImagesSitemap() {
   }
 }
 
+// Fetch product names from database and append to productKeywords
+async function appendProductNamesToKeywords() {
+  try {
+    const products = await Item.find({}).select('name').lean();
+    const productNames = products.map(product => product.name.toLowerCase());
+    
+    // Append product names to productKeywords array
+    productKeywords.push(...productNames);
+    
+    console.log(`✅ Added ${productNames.length} product names to keywords`);
+    return productNames.length;
+  } catch (error) {
+    console.error('❌ Error fetching product names:', error);
+    return 0;
+  }
+}
+
 // Generate sitemap index
 function generateSitemapIndex() {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -255,6 +272,11 @@ async function generateAllSitemaps() {
     await connectDB();
     
     const publicDir = path.join(__dirname, '..', 'client', 'public');
+    
+    // Fetch and append product names to keywords
+    console.log('🔍 Fetching product names from database...');
+    await appendProductNamesToKeywords();
+    console.log();
     
     // Generate main sitemap
     console.log('📄 Generating main sitemap...');
