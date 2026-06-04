@@ -20,7 +20,7 @@ const categories = [
   'modern taps and sinks'
 ];
 
-// Enhanced location-based keywords for comprehensive local SEO
+// Enhanced location-based keywords for comprehensive local SEO.
 const locations = [
   'Kiserian', 'Near Me', 'Siaya', 'Karen', 'Bondo', 'Samburu', 'East Leigh', 'Suna West', 'Suna East', 'Thika', 'Ruiru', 'Kayole', 'South B', 'Kikuyu', 'Kitisuru', 'Killimani', 'Lavington',  'Galeria', 'Westland', 'Muthaiga','CBD', 'Two Rivers', 'Makueni', 'Machakos', 'Kabiria', 'Ngong', 'Ngong Road', 'Kajiado', 'Dagoreti', 'Ugunja', 'Mombasa', 'Lodwar', 'Lower Kabete', 'Garisa', 'Kasarani', 'Yaya Centre', 'Hardware Near Me', 'Uyoma', 'Ndori', 'Kisumu', 'Thika Road', 'Uthiru', 'Chelinge', 'Town', 'Busia', 'Kericho', 'Nandi', 'Kwale', 'Marsabit', 'Isiolo', 'Meru', 'Tharaka Nithi', 'Embu', 'Makueni', 'Nyeri', 'Nyandarua', "Murang'a", 'Kiambu', 'Turkana', 'Mlolongo', 'Industrial Area', 'Kasarani', 'West Pokot', 'Trans-Nzoia', 'Elgeyo Marakwet', 'Nandi', 'Baringo', 'Laikipia', 'Narok', 'Bomet', 'Kakamega', 'Kakuma', 'Vihiga', 'Bungoma', 'Homa Bay', 'Migori', 'Tana River', 'Lamu', 'Kilifi', 'rongai', 'nairobi', 'kenya', 'kajiado', 'ngong', 'karen', 
   'langata', 'kibera', 'kawangware', 'dagoretti', 'kikuyu',
