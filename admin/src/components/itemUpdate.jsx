@@ -127,9 +127,9 @@ const ItemUpdate = () => {
       }
     });
 
-    console.log(`📊 [UPDATE] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
-    console.log(`🌐 [UPDATE] Backend URL: ${backendURL}/${id}`);
-    console.log("🔌 [UPDATE] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+    // console.log(`📊 [UPDATE] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
+    // console.log(`🌐 [UPDATE] Backend URL: ${backendURL}/${id}`);
+    // console.log("🔌 [UPDATE] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
 
     try {
       console.log("📤 [UPDATE] Sending PUT request to backend...");
@@ -138,7 +138,7 @@ const ItemUpdate = () => {
         timeout: 30000,
       });
       console.log("✅ [UPDATE] Success! Item updated");
-      toast.success("✨ Item updated successfully!", {
+      toast.success("Item updated successfully!", {
         position: "top-right",
         autoClose: 3000,
       });

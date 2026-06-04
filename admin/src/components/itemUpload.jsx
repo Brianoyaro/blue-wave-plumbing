@@ -106,8 +106,8 @@ const UploadForm = () => {
     });
 
     console.log(`📊 [UPLOAD] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
-    console.log(`🌐 [UPLOAD] Backend URL: ${backendURL}`);
-    console.log("🔌 [UPLOAD] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+    // console.log(`🌐 [UPLOAD] Backend URL: ${backendURL}`);
+    // console.log("🔌 [UPLOAD] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
 
     try {
       console.log("📤 [UPLOAD] Sending request to backend...");
@@ -116,7 +116,7 @@ const UploadForm = () => {
         timeout: 30000,
       });
       console.log("✅ [UPLOAD] Success! Response:", response.data);
-      toast.success("✨ Item uploaded successfully!", {
+      toast.success("Item uploaded successfully!", {
         position: "top-right",
         autoClose: 3000,
       });
