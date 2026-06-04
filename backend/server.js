@@ -7,9 +7,23 @@ const itemRoutes = require("./routes/itemRoutes");
 
 const app = express();
 
+// CORS Configuration
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN ? JSON.parse(process.env.CORS_ORIGIN) : [
+    'https://admin.bluewavesplumbing.com',
+    'https://bluewavesplumbing.com',
+    'http://localhost:5173',
+    'http://localhost:5174'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors(corsOptions));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Health check endpoint for keep-alive
 app.get("/api/health", (req, res) => {
