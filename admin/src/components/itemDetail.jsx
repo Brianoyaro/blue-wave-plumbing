@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 function ItemDetail() {
   const { id } = useParams();
@@ -27,12 +28,27 @@ function ItemDetail() {
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to delete this item?")) {
       try {
+        console.log("🗑️ [DELETE] Starting item deletion...");
+        console.log(`🗑️ [DELETE] Item ID: ${id}`);
         await axios.delete(`${backendURL}/${id}`);
-        alert("Item deleted successfully!");
-        navigate("/"); // redirect after delete
+        console.log("✅ [DELETE] Item deleted successfully");
+        toast.success("Item deleted successfully!", {
+          position: "top-right",
+          autoClose: 3000,
+        });
+        setTimeout(() => navigate("/"), 1500);
       } catch (err) {
-        console.error(err);
-        alert("Failed to delete item.");
+        console.error("❌ [DELETE] Error:", err);
+        console.error("📍 [ERROR] Error type:", err.name);
+        console.error("💬 [ERROR] Message:", err.message);
+        if (err.response) {
+          console.error("🚨 [RESPONSE] Status:", err.response.status);
+          console.error("🚨 [RESPONSE] Data:", err.response.data);
+        }
+        toast.error("❌ Failed to delete item. Please try again.", {
+          position: "top-right",
+          autoClose: 4000,
+        });
       }
     }
   };
