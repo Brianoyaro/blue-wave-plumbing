@@ -13,6 +13,7 @@ const UploadForm = () => {
 
   const [previewImages, setPreviewImages] = useState([]);
   const [isCompressing, setIsCompressing] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Handle input change
@@ -85,6 +86,24 @@ const UploadForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Prevent double submission
+    if (isUploading || isCompressing) {
+      toast.warning("Please wait for the current upload to complete.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
+    // Validate form
+    if (!formData.name.trim() || !formData.description.trim() || !formData.category || formData.images.length === 0) {
+      toast.error("Please fill all fields and select images.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      return;
+    }
+
     console.log("🚀 [UPLOAD] Starting item upload...");
     console.log("📝 [UPLOAD] Form data:", {
       name: formData.name,
@@ -106,8 +125,8 @@ const UploadForm = () => {
     });
 
     console.log(`📊 [UPLOAD] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
-    // console.log(`🌐 [UPLOAD] Backend URL: ${backendURL}`);
-    // console.log("🔌 [UPLOAD] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+
+    setIsUploading(true);
 
     try {
       console.log("📤 [UPLOAD] Sending request to backend...");
@@ -155,6 +174,8 @@ const UploadForm = () => {
         position: "top-right",
         autoClose: 5000,
       });
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -281,7 +302,7 @@ const UploadForm = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          disabled={isCompressing}
+          disabled={isCompressing || isUploading}
           className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 text-base sm:text-lg flex items-center justify-center"
         >
           {isCompressing ? (
@@ -290,6 +311,13 @@ const UploadForm = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
               Processing...
+            </>
+          ) : isUploading ? (
+            <>
+              <svg className="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Uploading...
             </>
           ) : (
             <>

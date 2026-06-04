@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import ImageCarousel from "./ImageCarousel";
 
 function ItemDetail() {
   const { id } = useParams();
@@ -94,31 +95,13 @@ function ItemDetail() {
           Back to Items
         </Link>
 
-        {/* Images Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
-          {item.images.length > 0 ? (
-            item.images.map((img, index) => (
-              <div 
-                key={index} 
-                className="relative group overflow-hidden rounded-2xl shadow-lg bg-gray-50 aspect-square sm:aspect-auto"
-              >
-                <img
-                  src={img || fallbackImage}
-                  alt={`${item.name}-${index + 1}`}
-                  className="w-full h-full sm:h-72 object-contain group-hover:scale-105 transition-transform duration-300"
-                  onError={(e) => (e.currentTarget.src = fallbackImage)}
-                />
-              </div>
-            ))
-          ) : (
-            <div className="col-span-1 sm:col-span-2 overflow-hidden rounded-2xl shadow-lg bg-gray-50 aspect-square sm:aspect-auto">
-              <img
-                src={fallbackImage}
-                alt="placeholder"
-                className="w-full h-full sm:h-72 object-contain"
-              />
-            </div>
-          )}
+        {/* Image Carousel */}
+        <div className="mb-6 sm:mb-8 max-w-3xl mx-auto">
+          <ImageCarousel 
+            images={item.images} 
+            itemName={item.name}
+            fallbackImage={fallbackImage}
+          />
         </div>
 
         {/* Item Info Card */}

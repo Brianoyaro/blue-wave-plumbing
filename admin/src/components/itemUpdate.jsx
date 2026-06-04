@@ -17,6 +17,7 @@ const ItemUpdate = () => {
 
   const [previewImages, setPreviewImages] = useState([]);
   const [isCompressing, setIsCompressing] = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
   const backendURL = import.meta.env.VITE_BACKEND_URL;
 
   // Fetch existing item data
@@ -106,6 +107,15 @@ const ItemUpdate = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Prevent double submission
+    if (isUploading || isCompressing) {
+      toast.warning("Please wait for the current operation to complete.", {
+        position: "top-right",
+        autoClose: 2000,
+      });
+      return;
+    }
+
     console.log("🚀 [UPDATE] Starting item update...");
     console.log("📝 [UPDATE] Item ID:", id);
     console.log("📝 [UPDATE] Form data:", {
@@ -127,9 +137,7 @@ const ItemUpdate = () => {
       }
     });
 
-    // console.log(`📊 [UPDATE] Total FormData size: ~${formData.images.reduce((sum, f) => sum + f.size, 0) / 1024 / 1024}MB`);
-    // console.log(`🌐 [UPDATE] Backend URL: ${backendURL}/${id}`);
-    // console.log("🔌 [UPDATE] CORS Origin: admin.bluewavesplumbing.com → api.bluewavesplumbing.com");
+    setIsUploading(true);
 
     try {
       console.log("📤 [UPDATE] Sending PUT request to backend...");
@@ -169,6 +177,8 @@ const ItemUpdate = () => {
         position: "top-right",
         autoClose: 5000,
       });
+    } finally {
+      setIsUploading(false);
     }
   };
 
@@ -298,7 +308,7 @@ const ItemUpdate = () => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
           <button
             type="submit"
-            disabled={isCompressing}
+            disabled={isCompressing || isUploading}
             className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 text-base sm:text-lg flex items-center justify-center"
           >
             {isCompressing ? (
@@ -307,6 +317,13 @@ const ItemUpdate = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
                 Processing...
+              </>
+            ) : isUploading ? (
+              <>
+                <svg className="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Updating...
               </>
             ) : (
               <>
@@ -321,7 +338,8 @@ const ItemUpdate = () => {
           <button
             type="button"
             onClick={() => navigate("/")}
-            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition text-base sm:text-lg flex items-center justify-center"
+            disabled={isUploading}
+            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 sm:py-4 px-6 rounded-lg transition text-base sm:text-lg flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
