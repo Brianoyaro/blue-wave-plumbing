@@ -9,6 +9,7 @@ import ItemDetail from "./components/itemDetail";
 import ItemUpdate from "./components/itemUpdate";
 import ItemUpload from "./components/itemUpload";
 import CategoryPage from "./components/categoryPage";
+import QuotationForm  from "./components/QuotationForm"
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Route path="/item/update/:id" element={<ItemUpdate />} />
             <Route path="/upload" element={<ItemUpload />} />
             <Route path="/category/:category" element={<CategoryPage />} />
+            <Route path="/quote" element={<QuotationForm />} />
           </Routes>
         </main>
       </div>

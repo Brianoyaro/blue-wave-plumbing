@@ -47,6 +47,17 @@ function Navbar() {
             >
               Create Item
             </NavLink>
+
+            <NavLink
+             to="/quote"
+             className={({ isActive }) =>
+                isActive
+                  ? "text-blue-200 font-semibold bg-blue-700 px-3 py-2 text-sm md:text-base rounded-lg"
+                  : "text-blue-100 hover:text-white hover:bg-blue-700 px-3 py-2 text-sm md:text-base rounded-lg transition-all"
+              }
+             >
+               Create Quote
+             </NavLink>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -96,6 +107,18 @@ function Navbar() {
               }
             >
               Create Item
+            </NavLink>
+
+            <NavLink
+              to="/quote"
+              onClick={closeMenu}
+              className={({ isActive }) =>
+                isActive
+                  ? "block text-blue-200 font-semibold bg-blue-700 px-4 py-3 text-base rounded-lg w-full text-left"
+                  : "block text-blue-100 hover:text-white hover:bg-blue-700 px-4 py-3 text-base rounded-lg transition-all w-full text-left"
+              }
+            >
+              Create Quote
             </NavLink>
           </div>
         )}
