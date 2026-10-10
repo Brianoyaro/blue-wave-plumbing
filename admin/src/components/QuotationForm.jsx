@@ -503,78 +503,160 @@ export default function QuotationForm() {
               </section>
 
               <hr className="my-6" />
-
               <section>
                 <div className="mb-4 flex items-center justify-between gap-2">
-                  <h2 className="text-lg font-semibold text-gray-900">Items</h2>
-                  <button type="button" onClick={addItem} className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:bg-gray-800">
+                  <div>
+                    <h2 className="text-lg font-semibold text-gray-900">
+                      Items
+                    </h2>
+                    <p className="mt-1 text-xs text-gray-500">
+                      {fields.length} item{fields.length !== 1 ? "s" : ""} added.
+                      Scroll to view all items.
+                    </p>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={addItem}
+                    className="shrink-0 rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:bg-gray-800"
+                  >
                     + Add item
                   </button>
                 </div>
 
-                <div className="space-y-4">
-                  {fields.map((field, index) => {
-                    const item = watchedItems[index] || field;
-                    return (
-                      <div key={field.id} className="rounded-lg border bg-gray-50 p-4">
-                        <div className="mb-3 flex items-center justify-between gap-2">
-                          <span className="text-sm font-semibold">Item {index + 1}</span>
-                          <div className="flex gap-3">
-                            <button type="button" onClick={() => duplicateItem(index)} className="text-sm font-medium text-blue-700 hover:text-blue-900">
-                              Duplicate
-                            </button>
-                            {fields.length > 1 && (
-                              <button type="button" onClick={() => remove(index)} className="text-sm text-red-600 hover:text-red-800">
-                                Remove
+                {/* Fixed-height, vertically scrollable items panel */}
+                <div
+                  className="h-[480px] overflow-y-auto overscroll-contain rounded-lg border border-gray-200 bg-gray-50 p-3"
+                  role="region"
+                  aria-label="Quotation line items"
+                  tabIndex={0}
+                >
+                  <div className="space-y-4">
+                    {fields.map((field, index) => {
+                      const item = watchedItems[index] || field;
+
+                      return (
+                        <div
+                          key={field.id}
+                          className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
+                        >
+                          <div className="mb-3 flex items-center justify-between gap-2">
+                            <span className="text-sm font-semibold text-gray-900">
+                              Item {index + 1}
+                            </span>
+
+                            <div className="flex gap-3">
+                              <button
+                                type="button"
+                                onClick={() => duplicateItem(index)}
+                                className="text-sm font-medium text-blue-700 hover:text-blue-900"
+                              >
+                                Duplicate
                               </button>
+
+                              {fields.length > 1 && (
+                                <button
+                                  type="button"
+                                  onClick={() => remove(index)}
+                                  className="text-sm text-red-600 hover:text-red-800"
+                                >
+                                  Remove
+                                </button>
+                              )}
+                            </div>
+                          </div>
+
+                          <div>
+                            <label
+                              htmlFor={`item-description-${field.id}`}
+                              className="mb-1 block text-xs font-medium text-gray-700"
+                            >
+                              Description
+                            </label>
+
+                            <input
+                              id={`item-description-${field.id}`}
+                              {...register(`items.${index}.description`, {
+                                required: "Description is required",
+                              })}
+                              className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm"
+                              placeholder="e.g. Danco PPR Pipe 25 mm"
+                            />
+
+                            {errors.items?.[index]?.description && (
+                              <p className="mt-1 text-xs text-red-600">
+                                {errors.items[index].description.message}
+                              </p>
                             )}
                           </div>
-                        </div>
-                        <div>
-                          <label className="mb-1 block text-xs font-medium">Description</label>
-                          <input
-                            {...register(`items.${index}.description`, { required: "Description is required" })}
-                            className="w-full rounded-md border bg-white px-3 py-2 text-sm"
-                            placeholder="e.g. Danco PPR Pipe 25 mm"
-                          />
-                          {errors.items?.[index]?.description && (
-                            <p className="mt-1 text-xs text-red-600">{errors.items[index].description.message}</p>
-                          )}
-                        </div>
-                        <div className="mt-3 grid grid-cols-3 gap-3">
-                          <div>
-                            <label className="mb-1 block text-xs font-medium">Qty</label>
-                            <input
-                              type="number"
-                              min="0"
-                              step="0.01"
-                              value={item.quantity ?? ""}
-                              onChange={(event) => handleQuantityChange(index, event.target.value)}
-                              className="w-full rounded-md border bg-white px-3 py-2 text-sm"
-                            />
+
+                          <div className="mt-3 grid grid-cols-3 gap-3">
+                            <div>
+                              <label
+                                htmlFor={`item-quantity-${field.id}`}
+                                className="mb-1 block text-xs font-medium text-gray-700"
+                              >
+                                Qty
+                              </label>
+
+                              <input
+                                id={`item-quantity-${field.id}`}
+                                type="number"
+                                min="0"
+                                step="0.01"
+                                value={item.quantity ?? ""}
+                                onChange={(event) =>
+                                  handleQuantityChange(index, event.target.value)
+                                }
+                                className="w-full min-w-0 rounded-md border border-gray-300 bg-white px-2 py-2 text-sm"
+                              />
+                            </div>
+
+                            <div>
+                              <label
+                                htmlFor={`item-unit-${field.id}`}
+                                className="mb-1 block text-xs font-medium text-gray-700"
+                              >
+                                Unit
+                              </label>
+
+                              <input
+                                id={`item-unit-${field.id}`}
+                                {...register(`items.${index}.unit`)}
+                                className="w-full min-w-0 rounded-md border border-gray-300 bg-white px-2 py-2 text-sm"
+                                placeholder="Pcs"
+                              />
+                            </div>
+
+                            <div>
+                              <label
+                                htmlFor={`item-rate-${field.id}`}
+                                className="mb-1 block text-xs font-medium text-gray-700"
+                              >
+                                Rate (KSh)
+                              </label>
+
+                              <input
+                                id={`item-rate-${field.id}`}
+                                type="number"
+                                min="0"
+                                step="0.01"
+                                value={item.rate ?? ""}
+                                onChange={(event) =>
+                                  handleRateChange(index, event.target.value)
+                                }
+                                className="w-full min-w-0 rounded-md border border-gray-300 bg-white px-2 py-2 text-sm"
+                              />
+                            </div>
                           </div>
-                          <div>
-                            <label className="mb-1 block text-xs font-medium">Unit</label>
-                            <input {...register(`items.${index}.unit`)} className="w-full rounded-md border bg-white px-3 py-2 text-sm" placeholder="Pcs" />
-                          </div>
-                          <div>
-                            <label className="mb-1 block text-xs font-medium">Rate (KSh)</label>
-                            <input
-                              type="number"
-                              min="0"
-                              step="0.01"
-                              value={item.rate ?? ""}
-                              onChange={(event) => handleRateChange(index, event.target.value)}
-                              className="w-full rounded-md border bg-white px-3 py-2 text-sm"
-                            />
+
+                          <div className="mt-3 text-right text-sm font-semibold text-gray-800">
+                            Amount: KSh {formatCurrency(calculateItemAmount(item))}
                           </div>
                         </div>
-                        <div className="mt-3 text-right text-sm font-semibold">
-                          Amount: KSh {formatCurrency(calculateItemAmount(item))}
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
               </section>
 
